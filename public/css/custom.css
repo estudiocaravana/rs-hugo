@@ -1,0 +1,69 @@
+/* static/css/custom.css */
+
+@theme {
+  /* Variables globales del sitio usando el espacio OKLCH */
+  --color-ribeira-principal: oklch(0.28 0.08 152); /* Un verde profundo y elegante para los cañones */
+  --color-ribeira-acento: oklch(0.68 0.14 74);     /* Un tono tierra/oro viejo para contrastes hídricos */
+  --color-ribeira-fondo: oklch(0.98 0.01 150);     /* Un fondo roto muy sutil y limpio */
+}
+
+:root {
+  /* Sobrescribimos las variables de Pico v2 para adaptarlas a la Ribeira Sacra */
+  --pico-primary: var(--color-ribeira-principal);
+  --pico-background-color: var(--color-ribeira-fondo);
+  --pico-font-family: system-ui, -apple-system, sans-serif;
+  
+  /* Ajustamos los espaciados editoriales por defecto de Pico */
+  --pico-typography-spacing: var(--pico-spacing);
+}
+
+/* Estilos de maquetación semántica */
+header.hero-landscape {
+  padding: calc(var(--pico-spacing) * 4) 0;
+  border-bottom: 1px solid oklch(0.85 0.02 150);
+  text-align: center;
+}
+
+/* Tipografía de corte editorial para títulos */
+h1, h2, h3 {
+  font-family: var(--pico-font-family);
+  color: var(--color-ribeira-principal);
+  font-weight: 800;
+}
+/* Ajuste de lectura y líneas divisoras */
+p.secondary { color: oklch(0.35 0.02 150); }
+hr { border-top: 1px solid oklch(0.88 0.01 150); }
+/* static/css/custom.css */
+
+/* Forzamos que en pantallas grandes el grid muestre 3 columnas y en móviles 1 */
+#atributos .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--pico-spacing);
+}
+
+/* Estilizamos la tarjeta nativa de Pico con colores OKLCH */
+article.tarjeta-patrimonio {
+  border: 1px solid oklch(0.88 0.01 150);
+  background-color: oklch(0.99 0.005 150);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto de enfoque sutil al pasar el ratón (Hover) sin JavaScript */
+article.tarjeta-patrimonio:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-ribeira-acento); /* Usa nuestro tono tierra en OKLCH */
+  box-shadow: 0 8px 16px oklch(0.20 0.05 152 / 0.04);
+}
+
+article.tarjeta-patrimonio header {
+  background-color: transparent;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+article.tarjeta-patrimonio h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--color-ribeira-principal); /* Nuestro verde de los cañones */
+}

@@ -1,0 +1,36 @@
+<!-- layouts/_default/single.html -->
+{{ define "main" }}
+  <article class="container mar-top:40 mar-bottom:60 max-w:800">
+    
+    <!-- Cabecera de la página: Título oficial del Atributo -->
+    <header class="mar-bottom:32 text:center">
+      <div class="font:12 font:bold color:sky-50 text:uppercase letter-spacing:1 mar-bottom:8">
+        Criterio UNESCO · {{ .Params.criterio | default "IV" }}
+      </div>
+      <h1 class="font:40 font:extrabold color:sky-95 line-height:1.2">
+        {{ .Title }}
+      </h1>
+      <hr class="border:1|solid|sky-90 mar-top:24">
+    </header>
+
+    <!-- Imagen destacada editorial si existe en el Markdown -->
+    {{ if .Params.image }}
+      <div class="w:full aspect:16/9 r:20 overflow:hidden bg:sky-85 mar-bottom:32 shadow:0|8|24|sky-90|0.15">
+        <img class="object:cover full" src="{{ .Params.image }}" loading="eager" alt="{{ .Title }}" />
+      </div>
+    {{ end }}
+
+    <!-- Cuerpo del Texto Oficial (Inalterable) procesado desde el Markdown -->
+    <div class="color:sky-95 font:16 line-height:1.7 text:justify match-p:mar-bottom:20">
+      {{ .Content }}
+    </div>
+
+    <!-- Botón inferior semántico para volver a la Home del idioma actual -->
+    <footer class="mar-top:48 border-top:1|solid|sky-90 pad-top:24 flex jc:center">
+      <a href="{{ .Site.Home.RelPermalink }}" role="button" class="text:none text:uppercase f:0.8rem f:bold pad:10_24 bg:sky-50 color:white bg:sky-60:hover r:100 transition:background|0.2s">
+        ← {{ if eq .Lang "gl" }}Volver ao Inicio{{ else }}Volver al Inicio{{ end }}
+      </a>
+    </footer>
+
+  </article>
+{{ end }}

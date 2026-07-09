@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Hugo inyecta de forma 100% nativa el código del idioma actual (gl, es o en) -->
+<html lang="{{ .Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    
+    {{ with .Params.description }}
+    <meta name="description" content="{{ . }}">
+    {{ else }}
+    <meta name="description" content="{{ .Site.Params.description }}">
+    {{ end }}
+
+    <!-- Cargamos las fuentes locales de forma limpia y directa -->
+    <link rel="stylesheet" href="/css/fonts.css">
+
+    <!-- Reemplazamos .Site.IsServer por hugo.IsServer para silenciar el error -->
+    {{ if hugo.IsServer }}
+      <!-- EN LOCAL: Cargamos el script de Master CSS en memoria (cero configuraciones) -->
+      <script src="https://cdn.master.co/css@1.37.8"></script>
+    {{ else }}
+      <!-- EN PRODUCCIÓN: Netlify leerá las clases y servirá este CSS físico estático -->
+      <link rel="stylesheet" href="/css/master.css">
+    {{ end }}
+</head>
+<body class="font-family:sans f:14 f:17@lg color:sky-26 lh:1.5 m:0 p:0">
+
+    <!-- Incluimos el componente Navbar pasándole el contexto global (.) -->
+    {{ partial "navbar.html" . }}
+
+    <!-- Contenedor principal semántico de Pico.css -->
+    <main class="container">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- Incluimos el componente Footer -->
+    {{ partial "footer.html" . }}
+
+</body>
+</html>

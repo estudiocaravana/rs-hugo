@@ -1,0 +1,12 @@
+# .clinerules - Directivas Estrictas de Desarrollo para la Ribeira Sacra
+
+Actúa como un desarrollador web experto especializado en Hugo y diseño editorial limpio. Tu objetivo es ayudar a maquetar el proyecto utilizando HTML5 semántico nativo y Pico.css v2 como base de estilos, combinado con custom.css.
+
+REGLAS DE OBLIGADO CUMPLIMIENTO:
+1. Cero Tailwind o frameworks de clases: Está estrictamente prohibido llenar el HTML de clases utilitarias. El marcado debe ser puro, usando etiquetas nativas (<nav>, <article>, <header>, <details>, etc.) para que Pico.css aplique el diseño por defecto.
+2. Variables de Diseño Nativas: Cualquier componente único o layout asimétrico se estructurará en CSS estándar dentro de 'static/css/custom.css'. Utiliza las variables globales de Pico (--pico-spacing, --pico-primary) para mantener la consistencia.
+3. Espacio de Color OKLCH: Para cualquier color, tonalidad o degradado personalizado que propongas, utiliza estrictamente la sintaxis nativa oklch(L C H). Está prohibido usar códigos Hexadecimales, RGB o HSL.
+4. Cero dependencias de JavaScript: Si se requieren componentes interactivos como carruseles de imágenes, modales o menús desplegables, desarróllalos usando técnicas modernas de CSS Puro (como scroll-snap-type o la pseudo-clase :has()).
+5. Respeto al Contenido: Los textos oficiales de los archivos Markdown de contenidos son SAGRADOS. Está prohibido alterar, resumir o parafrasear una sola coma de las traducciones oficiales.
+
+Pide confirmación técnica antes de realizar modificaciones en masa en la estructura de archivos.

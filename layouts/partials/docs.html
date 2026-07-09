@@ -1,0 +1,45 @@
+<section data-editable="layouts/partials/docs.html:section" class="grid-cols:1 grid-cols:2@md gap:40 p:40|20 max-w:1200 mx:auto bg:#e3f2fd">
+  {{/* Recorremos todos los elementos dentro de la sección 'docs' */}}
+  {{ range (where .Site.RegularPages "Section" "docs").ByWeight }}
+    <div class="flex:row gap:20 align-items:start bg:transparent">
+      
+      {{/* Columna Izquierda: Captura la ÚNICA imagen de la carpeta automáticamente */}}
+      {{ $img := .Resources.GetMatch "images/*" | default (.Resources.GetMatch "*") }}
+      
+      <div class="flex:shrink:0 w:120 w:150@md shadow:0|4|12|rgba(0,0,0,0.1)">
+        {{ if $img }}
+          {{/* Hugo optimiza y transforma a WebP de forma nativa */}}
+          {{ $webp := $img.Resize "300x webp q80" }}
+          <img src="{{ $webp.RelPermalink }}" width="{{ $webp.Width }}" height="{{ $webp.Height }}" alt="{{ .Title }}" class="w:full h:auto display:block">
+        {{ else }}
+          <!-- Bloque de reserva por si olvidas meter la foto en la carpeta -->
+          <div class="w:full h:180 bg:gray-20 flex justify-content:center align-items:center text:xs text:gray-50">No img</div>
+        {{ end }}
+      </div>
+
+      {{/* Columna Derecha: Textos y Botones */}}
+      <div class="flex:grow:1">
+        <h3 class="text:20 text:24@md font:bold text:#002855 line-height:1.2 mb:10">{{ .Title }}</h3>
+        <p class="text:14 text:16@md text:#002855 line-height:1.5 mb:20">{{ .Description }}</p>
+
+        {{/* Bucle interno para los botones dinámicos */}}
+        <div class="flex:row flex:wrap gap:12">
+          {{ range .Params.botones }}
+            {{ if eq .tipo "primary" }}
+              <!-- Botón Azul Sólido (PDF) -->
+              <a href="{{ .link }}" class="bg:#00a2f4 text:white font:semibold px:30 py:10 r:25 b:none text:center min-w:100 transition:background|0.2s hover:bg:#008cd4 text-decoration:none">
+                {{ .texto }}
+              </a>
+            {{ else }}
+              <!-- Botón Celeste Outline (WEB) -->
+              <a href="{{ .link }}" class="bg:#e3f2fd text:#00a2f4 font:semibold px:30 py:10 r:25 b:1|solid|#00a2f4 text:center min-w:100 transition:all|0.2s hover:bg:#00a2f4|10 text-decoration:none">
+                {{ .texto }}
+              </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+
+    </div>
+  {{ end }}
+</section>

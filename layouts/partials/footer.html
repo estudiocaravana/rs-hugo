@@ -1,0 +1,33 @@
+<!-- layouts/partials/footer.html -->
+<footer class="container">
+  <hr>
+  <!-- El div 'grid' de Pico.css v2 monta las columnas solo y es responsive nativo -->
+  <div class="grid">
+    <div>
+      <h6><strong>O Proxecto</strong></h6>
+      <ul>
+        <li><a href="#vue" class="secondary">{{ if eq .Lang "gl" }}Valor Universal Excepcional{{ else }}Valor Universal Excepcional{{ end }}</a></li>
+        <li><a href="#atributos" class="secondary">{{ if eq .Lang "gl" }}Atributos do Ben{{ else }}Atributos del Bien{{ end }}</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h6><strong>Institucional</strong></h6>
+      <ul>
+        <li><a href="https://cultura.gal" target="_blank" rel="noopener" class="secondary">Xunta de Galicia</a></li>
+        <li><a href="https://unesco.org" target="_blank" rel="noopener" class="secondary">UNESCO</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Pie inferior alineado para los textos legales -->
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--pico-spacing);">
+    <p><small>© 2026 Ribeira Sacra Paisaxe da Auga</small></p>
+    <ul style="display: flex; gap: var(--pico-spacing); list-style: none; margin: 0; padding: 0;">
+      <li><a href="/legal/aviso/" class="secondary"><small>{{ if eq .Lang "gl" }}Aviso Legal{{ else }}Aviso Legal{{ end }}</small></a></li>
+      <li><a href="/legal/privacidade/" class="secondary"><small>{{ if eq .Lang "gl" }}Política de Privacidade{{ else }}Política de Privacidad{{ end }}</small></a></li>
+    </ul>
+  </div>
+</footer>

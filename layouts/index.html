@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <header data-editable="layouts/index.html:header">
+    <div class="bg:yellow-96 p:60|10  text:center">
+      <p class="color:sky-70">{{ .Params.hero.tagline }}</p>
+      <!-- Separación lógica del título en Hugo sin alterar el Markdown -->
+{{ $palabras := split .Params.hero.title " " }}
+
+      <h1 class="max-w:300 max-w:400@lg mx:auto lh:1.2 f:30 f:45@lg f:black m:0">
+        <!-- 1. Envolvemos las dos primeras palabras (índices 0 y 1) en un span con Master CSS -->
+        <span class="color:sky-66">
+          {{ index $palabras 0 }} {{ index $palabras 1 }}
+        </span>
+        <!-- 2. Pintamos el resto de palabras del título uniendo el array desde el índice 2 -->
+        {{ delimit (after 2 $palabras) " " }}
+      </h1>
+
+      <p class="max-w:500 mx:auto">{{ .Params.hero.subtitle }}</p>
+      {{ if .Params.hero.cta_text }}
+        <a class="bg:sky-66 color:white m:30|10 inline-block" href="{{ .Params.hero.cta_link }}" role="button">{{ .Params.hero.cta_text }}</a>
+      {{ end }}
+    </div>
+  </header>
+{{ partial "docs.html" . }}
+
+{{ partial "grid-atributos.html" . }}
+
+{{ end }}

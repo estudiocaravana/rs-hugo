@@ -1,0 +1,36 @@
+<article class="flex:col bg:white r:24 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
+  
+  {{/* 1. Intentamos pillar la foto declarada en el Front Matter */}}
+  {{ $img := .Resources.GetMatch .Params.destacada }}
+  
+  {{/* 2. FALLBACK: Si no hay destacada, busca la primera de la carpeta EXCLUYENDO grafico.webp */}}
+  {{ if not $img }}
+    {{ range .Resources.ByType "image" }}
+      {{ if and (not $img) (not (hasPrefix .Name "grafico")) }}
+        {{ $img = . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  
+  <div class="aspect:4/3 bg:gray-5 overflow:hidden position:relative">
+    {{ if $img }}
+      {{ $webp := $img.Resize "600x webp q80" }}
+      <img src="{{ $webp.RelPermalink }}" width="{{ $webp.Width }}" height="{{ $webp.Height }}" alt="{{ .Title }}" class="w:full h:full object-fit:cover display:block">
+    {{ else }}
+      <div class="w:full h:full flex justify-content:center align-items:center text:xs text:gray-40 italic">Sen imaxe</div>
+    {{ end }}
+  </div>
+
+  <div class="p:30|20 flex:grow:1 flex:col">
+    <h3 class="text:20 text:22@md font:bold text:#002855 line-height:1.3 mb:15">
+      <a href="{{ .RelPermalink }}" class="text:currentColor text-decoration:none hover:text:#00a2f4 transition:color|0.2s">
+        {{ .Title }}
+      </a>
+    </h3>
+    <p class="text:15 text:16@md text:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
+      {{ .Description }}
+    </p>
+  </div>
+</article>
+
+

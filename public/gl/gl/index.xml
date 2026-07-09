@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Gls on Ribeira Sacra: Paisaxe da Auga</title>
+		<link>http://localhost:1313/gl/gl/</link>
+		<description>Recent content in Gls on Ribeira Sacra: Paisaxe da Auga</description>
+		<generator>Hugo</generator>
+		<language>gl</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/gl/gl/index.xml" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>

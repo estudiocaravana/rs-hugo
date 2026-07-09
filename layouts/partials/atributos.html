@@ -1,0 +1,60 @@
+  <!-- Sección de Atributos (Bucle Dinámico sobre la Colección) -->
+  <section id="atributos" class="container mar-top:40">
+    <header class="mar-bottom:24">
+      <h2 class="font:32 font:bold color:sky-90">{{ .Params.atributos_title }}</h2>
+    </header>
+
+    <!-- Grid adaptativo nativo de Master CSS -->
+    <div class="display:grid grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) gap:24">
+      
+      <!-- LOOP REAL: Hugo busca los archivos dentro de content/[idioma]/atributos/ -->
+      {{ range (where .Site.RegularPages "Section" "atributos") }}
+        <article class="bg:sky-95 p:12 r:16 border:1|solid|sky-90 flex flex:column jc:space-between shadow:0|4|12|sky-90|0.2 transition:transform|0.2s|ease transform:translateY(-4):hover border:sky-50:hover">
+          
+          <!-- Imagen del Atributo -->
+          <div class="relative w:full aspect:4/3 r:10 overflow:hidden bg:sky-85">
+            {{ if .Params.image }}
+                <img class="object:cover full transition:transform|0.2s|ease transform:scale(1.05):hover" src="{{ .Params.image }}" loading="lazy" alt="{{ .Title }}" />
+            {{ else }}
+              <div class="full flex ai:center jc:center color:sky-40 f:italic f:12">
+                Ribeira Sacra Imaxe
+              </div>
+            {{ end }}
+          </div>
+
+          <!-- Textos y Detalles -->
+          <div class="mt:16 p:8 flex-grow:1 flex flex:column jc:space-between">
+            <div>
+              <h3 class="font:20 font:bold color:sky-95 line-height:1.2">
+                {{ .Title }}
+              </h3>
+              <!-- Muestra la descripción corta del Frontmatter o el resumen automático del contenido -->
+            </div>
+
+            <!-- Bloque de Detalle (Fusión estilo tienda Master CSS) -->
+            <div class="mt:20">
+              <div class="font:11 font:semibold letter-spacing:1 color:sky-50 text:uppercase">
+                Criterio UNESCO
+              </div>
+              
+              <div class="mt:8 flex gap:6">
+                <span class="p:6|12 r:100 font:12 font:semibold bg:sky-80 color:sky-95">
+                  VUE
+                </span>
+                <span class="p:6|12 r:100 font:12 font:semibold border:1|solid|sky-85 color:sky-40">
+                  {{ .Params.criterio | default "IV" }}
+                </span>
+              </div>
+
+              <!-- Enlace dinámico que apunta a la página individual del atributo -->
+              <a class="color:sky-50 color:sky-70:hover font:12 text:underline mt:16 inline-block w:fit transition:color|0.2s" href="{{ .RelPermalink }}">
+                {{ if eq $.Lang "gl" }}Ampliar información →{{ else }}Ampliar información →{{ end }}
+              </a>
+            </div>
+          </div>
+
+        </article>
+      {{ end }}
+
+    </div>
+  </section>

@@ -1,0 +1,7 @@
+[build]
+  # 1. Le decimos a Netlify que instale el compilador, extraiga las clases del HTML y luego compile Hugo
+  command = "npm install -g @master/css-cli && master-css build 'layouts/**/*.html' content/**/*.md --output static/css/master.css && hugo --gc --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.140.0" # Ajusta a tu versión de Hugo

@@ -1,0 +1,20 @@
+{{/* Obtenemos la imagen desde los recursos de la página */}}
+{{ $img := .Page.Resources.GetMatch (.Get "src") }}
+
+{{ if $img }}
+  {{/* Procesamos la imagen: la convertimos a WebP y la redimensionamos si es muy grande */}}
+  {{/* Puedes cambiar "1200x" por el ancho máximo que desees para tu diseño */}}
+  {{ $webp := $img.Resize "1200x webp q80" }}
+  
+  <img 
+    src="{{ $webp.RelPermalink }}" 
+    width="{{ $webp.Width }}" 
+    height="{{ $webp.Height }}" 
+    alt="{{ .Get "alt" | default "" }}" 
+    class="{{ .Get "class" | default "" }}"
+    loading="lazy"
+  >
+{{ else }}
+  {{/* Alerta visual en desarrollo por si te equivocas al escribir el nombre de la foto */}}
+  <p style="color: red; font-weight: bold;">[Error: No se encontró la imagen "{{ .Get "src" }}"]</p>
+{{ end }}

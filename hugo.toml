@@ -1,0 +1,52 @@
+# hugo.toml - Configuración Base Multilingüe para la Ribeira Sacra
+
+baseURL = 'https://ribeirasacrapaisaxedaauga.gal'
+title = 'Ribeira Sacra: Paisaxe da Auga'
+
+# Desactivamos taxonomías innecesarias para mantener el HTML semántico y limpio
+disableKinds = ["taxonomy", "term"]
+
+# Configuración del Idioma por defecto (Gallego)
+defaultContentLanguage = 'gl'
+defaultContentLanguageInSubdir = true # Mantiene simetría forzando la ruta /gl/
+
+[languages]
+  [languages.gl]
+    label = 'Galego' # Actualizado de languageName a label
+    weight = 1
+    title = 'Ribeira Sacra: Paisaxe da Auga'
+    [languages.gl.params]
+      description = 'Candidatura da Ribeira Sacra a Patrimonio Mundial da UNESCO.'
+
+  [languages.es]
+    label = 'Castellano' # Actualizado de languageName a label
+    weight = 2
+    title = 'Ribeira Sacra: Paisaje del Agua'
+    [languages.es.params]
+      description = 'Candidatura de la Ribeira Sacra a Patrimonio Mundial de la UNESCO.'
+
+  [languages.en]
+    label = 'English' # Actualizado de languageName a label
+    weight = 3
+    title = 'Ribeira Sacra: Water Landscape'
+    [languages.en.params]
+      description = 'Ribeira Sacra candidacy for UNESCO World Heritage.'
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = '(postcss|master|tailwind)\.config\.js'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'

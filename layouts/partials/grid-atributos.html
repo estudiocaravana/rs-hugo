@@ -1,0 +1,20 @@
+<section data-editable="layouts/partials/grid-atributos.html:section" class="w:full bg:#f4f9fc p:60|20 p:80|40@md">
+  
+  {{/* Título adaptivo según el idioma actual del usuario */}}
+  <div class="max-w:1200 mx:auto text:center mb:50">
+    <h2 class="text:32 text:42@md font:bold text:#002855">
+      {{ if eq .Lang "gl" }}Atributos da Candidatura{{ else if eq .Lang "en" }}Candidacy Attributes{{ else }}Atributos de la Candidatura{{ end }}
+    </h2>
+  </div>
+
+  {{/* Rejilla responsiva idéntica a la imagen */}}
+  <div class="grid-cols:1 grid-cols:2@sm grid-cols:3@md gap:40 max-w:1200 mx:auto align-items:stretch">
+    {{/* Buscamos en todo el sitio las páginas de la sección 'atributos' y las ordenamos por peso */}}
+    {{ $atributos := where .Site.RegularPages "Section" "atributos" }}
+    
+    {{ range $atributos.ByWeight }}
+      {{ partial "tarjeta-atributo.html" . }}
+    {{ end }}
+  </div>
+
+</section>
