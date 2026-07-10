@@ -14,6 +14,8 @@
 
     <!-- Cargamos las fuentes locales de forma limpia y directa -->
     <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+
 
     <!-- Reemplazamos .Site.IsServer por hugo.IsServer para silenciar el error -->
     {{ if hugo.IsServer }}
@@ -36,6 +38,29 @@
 
     <!-- Incluimos el componente Footer -->
     {{ partial "footer.html" . }}
+
+    <!-- Inyector Local del Editor Visual (solo desarrollo) -->
+    {{ if hugo.IsServer }}
+       {{ partial "editor.html" . }}
+    {{ end }}
+
+<script src="/js/swiper-bundle.min.js"></script>
+<script>
+  // Esta inicialización servirá para CUALQUIER página que llame al partial
+  if (document.querySelector('.mySwiper')) {
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 25,
+      watchOverflow: false,
+      navigation: {
+        nextEl: ".boton-siguiente",
+        prevEl: ".boton-anterior",
+      },
+    });
+  }
+</script>
+
 
 </body>
 </html>

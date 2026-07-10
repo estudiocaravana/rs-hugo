@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Ribeira Sacra: Water Landscape</title>
+		<title>Inicio on Ribeira Sacra: Water Landscape</title>
 		<link>http://localhost:1313/en/</link>
-		<description>Recent content on Ribeira Sacra: Water Landscape</description>
+		<description>Recent content in Inicio on Ribeira Sacra: Water Landscape</description>
 		<generator>Hugo</generator>
 		<language>en</language>
 		
@@ -93,6 +93,20 @@
 				<link>http://localhost:1313/en/docs/fontes/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/en/docs/fontes/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Ruth Matilda Anderson Gallery</title>
+				<link>http://localhost:1313/en/galeria/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/en/galeria/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>The Documentary</title>
+				<link>http://localhost:1313/en/documental/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/en/documental/</guid>
 				<description></description>
 			</item>
 	</channel>

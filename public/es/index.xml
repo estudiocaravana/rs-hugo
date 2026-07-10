@@ -95,5 +95,19 @@
 				<guid>http://localhost:1313/es/atributos/beleza-escenica/</guid>
 				<description>&lt;p&gt;La unión de los ríos Miño y Sil y de cientos de hilos de agua conforma un territorio de altos cañones y valles fluviales, por donde el agua discurre entre abruptas pendientes.&lt;/p&gt;&#xA;&lt;p&gt;A la franja de terreno que desde el altiplano se asoma a las escarpadas vertientes se la conoce como bocarribeira. Las bocarribeiras del Miño y del Sil en Ribeira Sacra son asiento de numerosas aldeas que otean el fondo del valle.&lt;/p&gt;</description>
 			</item>
+			<item>
+				<title>El Documental</title>
+				<link>http://localhost:1313/es/documental/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/es/documental/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Galería Ruth Matilda Anderson</title>
+				<link>http://localhost:1313/es/galeria/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/es/galeria/</guid>
+				<description></description>
+			</item>
 	</channel>
 </rss>

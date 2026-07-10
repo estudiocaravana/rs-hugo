@@ -1,9 +1,10 @@
-<section data-editable="layouts/partials/grid-atributos.html:section" class="w:full bg:#f4f9fc p:60|20 p:80|40@md">
+<section data-editable="layouts/partials/grid-atributos.html:section" 
+class="p:60|20 p:80|40@md bg:yellow-96">
   
   {{/* Título adaptivo según el idioma actual del usuario */}}
   <div class="max-w:1200 mx:auto text:center mb:50">
-    <h2 class="text:32 text:42@md font:bold text:#002855">
-      {{ if eq .Lang "gl" }}Atributos da Candidatura{{ else if eq .Lang "en" }}Candidacy Attributes{{ else }}Atributos de la Candidatura{{ end }}
+    <h2 class="f:20 f:30@md font:bold">
+      {{ if eq .Lang "gl" }}Atributos{{ else if eq .Lang "en" }}Attributes{{ else }}Atributos{{ end }}
     </h2>
   </div>
 

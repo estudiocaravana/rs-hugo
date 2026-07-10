@@ -12,6 +12,8 @@
 
     
     <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+
 
     
     
@@ -19,77 +21,120 @@
       <script src="https://cdn.master.co/css@1.37.8"></script>
     
 </head>
-<body class="font-family:sans f:14 f:17@lg color:sky-26 lh:1.5">
+<body class="font-family:sans f:14 f:17@lg color:sky-26 lh:1.5 m:0 p:0">
 
     
     
-<nav class="flex justify-content:space-between align-items:center p:20|60 max-w:1200 mx:auto">
-  
-  
-  <div>
-    <a href="/en/" class="text-decoration:none text:20 font:bold text:#002855 hover:text:#00a2f4 transition:color|0.2s">
-      Ribeira Sacra
-    </a>
-  </div>
-  
-  
-  <ul class="flex align-items:center gap:40 list-style:none margin:0 padding:0">
-    <li>
-      
-      <a href="/en/atributos/" class="text-decoration:none font:medium text:#002855 hover:text:#00a2f4 transition:color|0.2s">
-        The Project
+<nav class="w:full bg:white">
+  <div class="mx:auto p:15|20 p:15|40@md flex align-items:center justify-content:space-between position:relative">
+    
+    
+    <div class="w:15%">
+      <a href="/en/" class="text-decoration:none f:20 f:bold">
+        <img src="/img/simbolo_paisaxe.webp" class="h:60" alt="">
       </a>
-    </li>
+    </div>
+
     
-    
-    <li class="flex gap:6 align-items:center bg:#e3f2fd p:6 r:100">
+    <button id="boton-menu" class="ml:auto flex flex:col gap:5 bg:transparent b:none cursor:pointer hidden@md z:120" aria-label="Menu">
+      <span class="w:25 h:3 bg:sky-66 r:3"></span>
+      <span class="w:25 h:3 bg:sky-66 r:3"></span>
+      <span class="w:25 h:3 bg:sky-66 r:3"></span>
+    </button>
+
+        
+    <ul id="menu-enlaces" class="list-style:none m:0 p:0 pb:60 flex align-items:center gap:20 gap:30@md z:100
+               abs top:100% left:0 w:full bg:white p:30 bb:1|solid|gray-15 shadow:0|10|20|rgba(0,0,0,0.05) flex:col
+               rel@md w:auto@md bg:transparent@md p:0@md bb:none@md shadow:none@md flex:row@md hidden flex@md">
       
-      
-      
-        
-        
-        
-        
-        <a href="/gl/atributos/" 
-           class="text-decoration:none font:bold text:14 uppercase p:6|14 r:100 transition:all|0.2s 
-                  
-                    text:#002855 hover:bg:#00a2f4|10
-                  ">
+            
+      <li class="block hidden@md pb:15 w:full text:center">
+        <div class="flex gap:4 w:fit mx:auto justify-content:center bg:sky-90 p:4 r:100 display:inline-flex">
+          
+            
+        <a href="/gl/atributos/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  text:#002855">
           gl
         </a>
-
-      
-        
-        
-        
-        
-        <a href="/es/atributos/" 
-           class="text-decoration:none font:bold text:14 uppercase p:6|14 r:100 transition:all|0.2s 
-                  
-                    text:#002855 hover:bg:#00a2f4|10
-                  ">
+          
+            
+        <a href="/es/atributos/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  text:#002855">
           es
         </a>
-
-      
-        
-        
-        
-        
-        <a href="/en/atributos/" 
-           class="text-decoration:none font:bold text:14 uppercase p:6|14 r:100 transition:all|0.2s 
-                  
-                    bg:#00a2f4 text:white shadow:0|2|8|rgba(0,162,244,0.3)
-                  ">
+          
+            
+        <a href="/en/atributos/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  bg:sky-66 f:white shadow:0|2|6|rgba(0,162,244,0.2)">
           en
         </a>
+          
+        </div>
+      </li>
+      <li>
+        <a href="/en/documental/" class="text-decoration:none f:sky-40 f:sky-60:hover f:medium f:sky-66.active ">
+          Documentary
+        </a>
+      </li>
+      <li>
+        <a href="/en/galeria/" class="text-decoration:none f:sky-40 f:sky-60:hover f:medium f:sky-66.active ">
+          Gallery
+        </a>
+      </li>
+      <li>
+        <a href="/en/atributos/" class="text-decoration:none f:sky-40 f:sky-60:hover f:medium f:sky-66.active active">
+          Attributes
+        </a>
+      </li>
+      <li>
+        <a href="/en/actualidade/" class="text-decoration:none f:sky-40 f:sky-60:hover f:medium f:sky-66.active ">
+          News
+        </a>
+      </li>
+    </ul>
 
+    
+<div class="w:15% hidden block@md">
+      <div class="w:fit ml:auto flex gap:4 align-items:center bg:sky-90 p:4 r:100">
       
+        
+        <a href="/gl/atributos/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  text:#002855">
+          gl
+        </a>
+      
+        
+        <a href="/es/atributos/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  text:#002855">
+          es
+        </a>
+      
+        
+        <a href="/en/atributos/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  bg:sky-66 f:white shadow:0|2|6|rgba(0,162,244,0.2)">
+          en
+        </a>
+      
+    </div>
+</div>
 
-    </li>
-  </ul>
+  </div>
 </nav>
 
+
+<script>
+  (function() {
+    const boton = document.getElementById('boton-menu');
+    const menu = document.getElementById('menu-enlaces');
+    
+    if (boton && menu) {
+      boton.addEventListener('click', function() {
+        
+        if (menu.classList.contains('hidden')) {
+          menu.classList.remove('hidden');
+          menu.classList.add('flex');
+        } else {
+          menu.classList.add('hidden');
+          menu.classList.remove('flex');
+        }
+      });
+    }
+  })();
+</script>
 
     
     <main class="container">
@@ -97,12 +142,13 @@
 <main class="w:full min-h:screen bg:#f4f9fc">
   
   
-  <section data-editable="layouts/partials/grid-atributos.html:section" class="w:full bg:#f4f9fc p:60|20 p:80|40@md">
+  <section data-editable="layouts/partials/grid-atributos.html:section" 
+class="p:60|20 p:80|40@md bg:yellow-96">
   
   
   <div class="max-w:1200 mx:auto text:center mb:50">
-    <h2 class="text:32 text:42@md font:bold text:#002855">
-      Candidacy Attributes
+    <h2 class="f:20 f:30@md font:bold">
+      Attributes
     </h2>
   </div>
 
@@ -112,166 +158,260 @@
     
     
     
-      <article class="flex:col bg:white r:24 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
-<a href="/en/atributos/patrimonio-inmaterial/" class="text:currentColor text-decoration:none hover:text:#00a2f4 transition:color|0.2s">
+      <article class="flex:col bg:yellow-98 r:6 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
+      <a href="/en/atributos/patrimonio-inmaterial/" class="f:sky-66 text-decoration:none f:sky-80:hover transition:color|0.2s">
+
   
   
-  <div class="aspect:4/3 bg:gray-5 overflow:hidden position:relative">
+  
+  
+  
     
       
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+  
+  <div class="square bg:yellow-98 p:10 overflow:hidden position:relative">
+    
       
       <img src="/gl/atributos/patrimonio-inmaterial/chouzan-1_hu_813d0432cec28455.webp" width="600" height="400" alt="Intangible heritage associated with water" class="w:full h:full object-fit:cover display:block">
     
   </div>
 
-  
-  <div class="p:30|20 flex:grow:1 flex:col">
-    <h3 class="text:20 text:22@md font:bold text:#002855 line-height:1.3 mb:15">
-      
+  <div class="p:10|20|30 flex:grow:1 flex:col">
+    <h3 class="f:20 max-w:280 f:bold f:#002855 f:sky-66 line-height:1.3 mb:15">
         Intangible heritage associated with water
     </h3>
-    
-    <p class="text:15 text:16@md text:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
+    <p class="f:15 f:16@md f:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
       The unique biocultural capital of a living cultural landscape and the intangible heritage associated with the culture of water.
     </p>
   </div>
-</a>
+  </a>
 </article>
 
+
+
     
-      <article class="flex:col bg:white r:24 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
-<a href="/en/atributos/formas-ancestrais/" class="text:currentColor text-decoration:none hover:text:#00a2f4 transition:color|0.2s">
+      <article class="flex:col bg:yellow-98 r:6 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
+      <a href="/en/atributos/formas-ancestrais/" class="f:sky-66 text-decoration:none f:sky-80:hover transition:color|0.2s">
+
   
   
-  <div class="aspect:4/3 bg:gray-5 overflow:hidden position:relative">
+  
+  
+  
     
       
+    
       
-      <img src="/gl/atributos/formas-ancestrais/grafico_hu_c183debaee00506c.webp" width="600" height="614" alt="Ancestral ways of occupying territory" class="w:full h:full object-fit:cover display:block">
+        
+      
+    
+      
+    
+      
+    
+      
+    
+  
+  
+  <div class="square bg:yellow-98 p:10 overflow:hidden position:relative">
+    
+      
+      <img src="/gl/atributos/formas-ancestrais/leiravella_hu_b7a805502bf8c388.webp" width="600" height="400" alt="Ancestral ways of occupying territory" class="w:full h:full object-fit:cover display:block">
     
   </div>
 
-  
-  <div class="p:30|20 flex:grow:1 flex:col">
-    <h3 class="text:20 text:22@md font:bold text:#002855 line-height:1.3 mb:15">
-      
+  <div class="p:10|20|30 flex:grow:1 flex:col">
+    <h3 class="f:20 max-w:280 f:bold f:#002855 f:sky-66 line-height:1.3 mb:15">
         Ancestral ways of occupying territory
     </h3>
-    
-    <p class="text:15 text:16@md text:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
+    <p class="f:15 f:16@md f:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
       A landscape of thousands of tiny plots generated by ancestral formulas of land ownership and management, adapted to an abrupt territory.
     </p>
   </div>
-</a>
+  </a>
 </article>
 
+
+
     
-      <article class="flex:col bg:white r:24 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
-<a href="/en/atributos/pegada-monastica/" class="text:currentColor text-decoration:none hover:text:#00a2f4 transition:color|0.2s">
+      <article class="flex:col bg:yellow-98 r:6 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
+      <a href="/en/atributos/pegada-monastica/" class="f:sky-66 text-decoration:none f:sky-80:hover transition:color|0.2s">
+
   
   
-  <div class="aspect:4/3 bg:gray-5 overflow:hidden position:relative">
+  
+  
+  
     
       
+        
+      
+    
+      
+    
+      
+    
+      
+    
+  
+  
+  <div class="square bg:yellow-98 p:10 overflow:hidden position:relative">
+    
       
       <img src="/gl/atributos/pegada-monastica/chouzan_hu_f561556d54dd3aa8.webp" width="600" height="400" alt="The hermit and monastic footprint" class="w:full h:full object-fit:cover display:block">
     
   </div>
 
-  
-  <div class="p:30|20 flex:grow:1 flex:col">
-    <h3 class="text:20 text:22@md font:bold text:#002855 line-height:1.3 mb:15">
-      
+  <div class="p:10|20|30 flex:grow:1 flex:col">
+    <h3 class="f:20 max-w:280 f:bold f:#002855 f:sky-66 line-height:1.3 mb:15">
         The hermit and monastic footprint
     </h3>
-    
-    <p class="text:15 text:16@md text:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
+    <p class="f:15 f:16@md f:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
       The hermit and monastic presence shaped much of the distinctive and functional traits of the cultural waterscape.
     </p>
   </div>
-</a>
+  </a>
 </article>
 
+
+
     
-      <article class="flex:col bg:white r:24 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
-<a href="/en/atributos/colonizacion-humana/" class="text:currentColor text-decoration:none hover:text:#00a2f4 transition:color|0.2s">
+      <article class="flex:col bg:yellow-98 r:6 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
+      <a href="/en/atributos/colonizacion-humana/" class="f:sky-66 text-decoration:none f:sky-80:hover transition:color|0.2s">
+
   
   
-  <div class="aspect:4/3 bg:gray-5 overflow:hidden position:relative">
+  
+  
+  
     
       
+        
+      
+    
+      
+    
+      
+    
+      
+    
+  
+  
+  <div class="square bg:yellow-98 p:10 overflow:hidden position:relative">
+    
       
       <img src="/gl/atributos/colonizacion-humana/bodegas_ronsel_hu_340b9d9135d36588.webp" width="600" height="400" alt="Epic work of human colonisation" class="w:full h:full object-fit:cover display:block">
     
   </div>
 
-  
-  <div class="p:30|20 flex:grow:1 flex:col">
-    <h3 class="text:20 text:22@md font:bold text:#002855 line-height:1.3 mb:15">
-      
+  <div class="p:10|20|30 flex:grow:1 flex:col">
+    <h3 class="f:20 max-w:280 f:bold f:#002855 f:sky-66 line-height:1.3 mb:15">
         Epic work of human colonisation
     </h3>
-    
-    <p class="text:15 text:16@md text:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
+    <p class="f:15 f:16@md f:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
       The survival of traditional farming systems on the steep slopes of river canyons supported by ancient techniques.
     </p>
   </div>
-</a>
+  </a>
 </article>
 
+
+
     
-      <article class="flex:col bg:white r:24 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
-<a href="/en/atributos/patrimonio-hidraulico/" class="text:currentColor text-decoration:none hover:text:#00a2f4 transition:color|0.2s">
+      <article class="flex:col bg:yellow-98 r:6 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
+      <a href="/en/atributos/patrimonio-hidraulico/" class="f:sky-66 text-decoration:none f:sky-80:hover transition:color|0.2s">
+
   
   
-  <div class="aspect:4/3 bg:gray-5 overflow:hidden position:relative">
+  
+  
+  
     
       
+        
+      
+    
+      
+    
+      
+    
+      
+    
+  
+  
+  <div class="square bg:yellow-98 p:10 overflow:hidden position:relative">
+    
       
       <img src="/gl/atributos/patrimonio-hidraulico/dosordo_hu_b71fd1dbec35a362.webp" width="600" height="400" alt="Dense and varied hydraulic heritage" class="w:full h:full object-fit:cover display:block">
     
   </div>
 
-  
-  <div class="p:30|20 flex:grow:1 flex:col">
-    <h3 class="text:20 text:22@md font:bold text:#002855 line-height:1.3 mb:15">
-      
+  <div class="p:10|20|30 flex:grow:1 flex:col">
+    <h3 class="f:20 max-w:280 f:bold f:#002855 f:sky-66 line-height:1.3 mb:15">
         Dense and varied hydraulic heritage
     </h3>
-    
-    <p class="text:15 text:16@md text:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
+    <p class="f:15 f:16@md f:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
       An immense repertoire of works that harness the power of water, from humble drinking fountains and innumerable traditional watermills to the engineering works of 20th-century hydroelectric dams.
     </p>
   </div>
-</a>
+  </a>
 </article>
 
+
+
     
-      <article class="flex:col bg:white r:24 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
-<a href="/en/atributos/beleza-escenica/" class="text:currentColor text-decoration:none hover:text:#00a2f4 transition:color|0.2s">
+      <article class="flex:col bg:yellow-98 r:6 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
+      <a href="/en/atributos/beleza-escenica/" class="f:sky-66 text-decoration:none f:sky-80:hover transition:color|0.2s">
+
   
   
-  <div class="aspect:4/3 bg:gray-5 overflow:hidden position:relative">
+  
+  
+  
     
       
+        
+      
+    
+      
+    
+      
+    
+      
+    
+  
+  
+  <div class="square bg:yellow-98 p:10 overflow:hidden position:relative">
+    
       
       <img src="/gl/atributos/beleza-escenica/auga_hu_f129712778788b22.webp" width="600" height="400" alt="A territory of great scenic beauty" class="w:full h:full object-fit:cover display:block">
     
   </div>
 
-  
-  <div class="p:30|20 flex:grow:1 flex:col">
-    <h3 class="text:20 text:22@md font:bold text:#002855 line-height:1.3 mb:15">
-      
+  <div class="p:10|20|30 flex:grow:1 flex:col">
+    <h3 class="f:20 max-w:280 f:bold f:#002855 f:sky-66 line-height:1.3 mb:15">
         A territory of great scenic beauty
     </h3>
-    
-    <p class="text:15 text:16@md text:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
+    <p class="f:15 f:16@md f:#002855 line-height:1.6 font:normal flex:grow:1 mb:0 opacity:0.9">
       The spectacular canyons and river valleys sustain and single out the waterscape of the Ribeira Sacra. The deep, spectacular and successive loops are its emblem.
     </p>
   </div>
-</a>
+  </a>
 </article>
+
+
 
     
   </div>
@@ -284,39 +424,114 @@
     </main>
 
     
+    <footer data-editable="layouts/partials/footer.html:footer" class="p:40|20">
+  <div class="mx:auto flex flex:col flex:row@md justify-content:space-between align-items:center gap:30">
     
-<footer class="container">
-  <hr>
-  
-  <div class="grid">
-    <div>
-      <h6><strong>O Proxecto</strong></h6>
-      <ul>
-        <li><a href="#vue" class="secondary">Valor Universal Excepcional</a></li>
-        <li><a href="#atributos" class="secondary">Atributos del Bien</a></li>
-      </ul>
-    </div>
     
-    <div>
-      <h6><strong>Institucional</strong></h6>
-      <ul>
-        <li><a href="https://cultura.gal" target="_blank" rel="noopener" class="secondary">Xunta de Galicia</a></li>
-        <li><a href="https://unesco.org" target="_blank" rel="noopener" class="secondary">UNESCO</a></li>
-      </ul>
+    <div class="flex gap:20 align-items:center">
+      <img src="/img/gob.webp" alt="Gobierno" class="h:40 h:50@md w:auto">
+      <img src="/img/xuntaver.webp" alt="Xunta de Galicia" class="h:40 h:50@md w:auto">
     </div>
-  </div>
 
-  <hr>
+    
+    <div class="flex@md align-items:center jc:center gap:30">
+      <a href="#" class="text-decoration:none f:sky-20 f:14 f:medium hover:text-decoration:underline">
+        Legal texts
+      </a>
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="cursor:pointer bg:sky-66 color:white b:none w:40 square r:100 f:12 f:bold flex ai:center jc:center tracking:1 hover:bg:sky-80 transition:background-color|0.3s flex align-items:center gap:5 block mx:auto mt:30 mt:0@md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
 
-  
-  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--pico-spacing);">
-    <p><small>© 2026 Ribeira Sacra Paisaxe da Auga</small></p>
-    <ul style="display: flex; gap: var(--pico-spacing); list-style: none; margin: 0; padding: 0;">
-      <li><a href="/legal/aviso/" class="secondary"><small>Aviso Legal</small></a></li>
-      <li><a href="/legal/privacidade/" class="secondary"><small>Política de Privacidad</small></a></li>
-    </ul>
   </div>
 </footer>
+
+
+    
+    
+       
+
+  <style>
+     
+    #visual-editor-sidebar {
+        position: fixed; right: -480px; top: 50%; transform: translateY(-50%);
+        width: 460px; height: auto; max-height: 90vh; 
+        background-color: #ffffff !important; color: #0f172a !important; opacity: 0.98; 
+        box-shadow: -4px 0 35px rgba(0,0,0,0.15) !important;
+        z-index: 999999 !important; border-radius: 12px !important; padding: 24px 24px 0px 36px !important;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+        display: flex !important; flex-direction: column !important; box-sizing: border-box !important; transition: right 0.2s ease-in-out !important;
+    }
+    #visual-editor-sidebar p { font-size: 13px !important; color: #64748b !important; margin: 0 0 12px 0 !important; line-height: 1.4 !important; }
+    #visual-editor-sidebar span { word-break: break-all !important; font-weight: 600 !important; color: #0f172a !important; }
+
+     
+    #ed-class-input {
+        width: 100% !important;
+        height: 180px !important;
+        padding: 16px 0px !important;
+        background-color: transparent !important;  
+        color: #1e293b !important;  
+        font-family: monospace !important;
+        font-size: 16px !important;
+        line-height: 1.8 !important;
+        border: none !important;
+        border-radius: 6px !important;
+        outline: none !important;
+        margin-bottom: 16px !important;
+        box-sizing: border-box !important;
+        overflow-y: auto !important;
+        white-space: pre-wrap !important;
+        word-wrap: break-word !important;
+        font-weight: 600 !important;
+    }
+
+     
+    #ed-class-input .mcss-prefix { color: #6d28d9 !important; font-weight: 600 !important; display: inline-block !important; }     
+    #ed-class-input .mcss-struct { color: #0284c7 !important; font-weight: 600 !important; display: inline-block !important; }     
+    #ed-class-input .mcss-spacing { color: #e11d48 !important; font-weight: 600 !important; display: inline-block !important; }    
+    #ed-class-input .mcss-dimension { color: #b45309 !important; font-weight: 600 !important; display: inline-block !important; }  
+    #ed-class-input .mcss-value { color: #16a34a !important; font-weight: 600 !important; display: inline-block !important; }      
+
+    #visual-editor-sidebar button {
+        color: #0f172a !important; background-color: transparent !important; border: 1px solid #0f172a !important; padding: 14px !important;
+        border-radius: 100px !important; font-weight: 700 !important; font-size: 14px !important; cursor: pointer !important; width: 120px !important;
+        margin-top: auto !important; margin-left:auto !important; transition: all 0.15s ease !important;
+    }
+    #visual-editor-sidebar button:hover { background-color: #0f172a !important; color: #ffffff !important; border-color: #0f172a !important; }
+    #visual-editor-sidebar .status-msg { font-size: 12px !important; text-align: center !important; margin-top: 10px !important; min-height: 15px !important; font-weight: 500 !important; }
+  </style>
+
+  <div id="visual-editor-sidebar">
+      <p><span id="ed-file-info">Ninguno</span></p>
+      <div id="ed-class-input" contenteditable="true" spellcheck="false"></div>
+      <button id="ed-save-btn">Guardar</button>
+      <p id="ed-status-msg" class="status-msg"></p>
+  </div>
+
+  <script src="/js/editor-injector.js"></script>
+
+
+    
+
+<script src="/js/swiper-bundle.min.js"></script>
+<script>
+  
+  if (document.querySelector('.mySwiper')) {
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 25,
+      watchOverflow: false,
+      navigation: {
+        nextEl: ".boton-siguiente",
+        prevEl: ".boton-anterior",
+      },
+    });
+  }
+</script>
 
 
 </body>

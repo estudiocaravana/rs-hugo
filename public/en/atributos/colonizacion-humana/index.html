@@ -12,6 +12,8 @@
 
     
     <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+
 
     
     
@@ -23,73 +25,116 @@
 
     
     
-<nav class="flex justify-content:space-between align-items:center p:20|60 max-w:1200 mx:auto">
-  
-  
-  <div>
-    <a href="/en/" class="text-decoration:none text:20 font:bold text:#002855 hover:text:#00a2f4 transition:color|0.2s">
-      Ribeira Sacra
-    </a>
-  </div>
-  
-  
-  <ul class="flex align-items:center gap:40 list-style:none margin:0 padding:0">
-    <li>
-      
-      <a href="/en/atributos/" class="text-decoration:none font:medium text:#002855 hover:text:#00a2f4 transition:color|0.2s">
-        The Project
+<nav class="w:full bg:white">
+  <div class="mx:auto p:15|20 p:15|40@md flex align-items:center justify-content:space-between position:relative">
+    
+    
+    <div class="w:15%">
+      <a href="/en/" class="text-decoration:none f:20 f:bold">
+        <img src="/img/simbolo_paisaxe.webp" class="h:60" alt="">
       </a>
-    </li>
+    </div>
+
     
-    
-    <li class="flex gap:6 align-items:center bg:#e3f2fd p:6 r:100">
+    <button id="boton-menu" class="ml:auto flex flex:col gap:5 bg:transparent b:none cursor:pointer hidden@md z:120" aria-label="Menu">
+      <span class="w:25 h:3 bg:sky-66 r:3"></span>
+      <span class="w:25 h:3 bg:sky-66 r:3"></span>
+      <span class="w:25 h:3 bg:sky-66 r:3"></span>
+    </button>
+
+        
+    <ul id="menu-enlaces" class="list-style:none m:0 p:0 pb:60 flex align-items:center gap:20 gap:30@md z:100
+               abs top:100% left:0 w:full bg:white p:30 bb:1|solid|gray-15 shadow:0|10|20|rgba(0,0,0,0.05) flex:col
+               rel@md w:auto@md bg:transparent@md p:0@md bb:none@md shadow:none@md flex:row@md hidden flex@md">
       
-      
-      
-        
-        
-        
-        
-        <a href="/gl/atributos/colonizacion-humana/" 
-           class="text-decoration:none font:bold text:14 uppercase p:6|14 r:100 transition:all|0.2s 
-                  
-                    text:#002855 hover:bg:#00a2f4|10
-                  ">
+            
+      <li class="block hidden@md pb:15 w:full text:center">
+        <div class="flex gap:4 w:fit mx:auto justify-content:center bg:sky-90 p:4 r:100 display:inline-flex">
+          
+            
+        <a href="/gl/atributos/colonizacion-humana/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  text:#002855">
           gl
         </a>
-
-      
-        
-        
-        
-        
-        <a href="/es/atributos/colonizacion-humana/" 
-           class="text-decoration:none font:bold text:14 uppercase p:6|14 r:100 transition:all|0.2s 
-                  
-                    text:#002855 hover:bg:#00a2f4|10
-                  ">
+          
+            
+        <a href="/es/atributos/colonizacion-humana/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  text:#002855">
           es
         </a>
-
-      
-        
-        
-        
-        
-        <a href="/en/atributos/colonizacion-humana/" 
-           class="text-decoration:none font:bold text:14 uppercase p:6|14 r:100 transition:all|0.2s 
-                  
-                    bg:#00a2f4 text:white shadow:0|2|8|rgba(0,162,244,0.3)
-                  ">
+          
+            
+        <a href="/en/atributos/colonizacion-humana/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  bg:sky-66 f:white shadow:0|2|6|rgba(0,162,244,0.2)">
           en
         </a>
+          
+        </div>
+      </li>
+      <li>
+        <a href="/en/documental/" class="text-decoration:none f:sky-40 f:sky-60:hover f:medium f:sky-66.active ">
+          Documentary
+        </a>
+      </li>
+      <li>
+        <a href="/en/galeria/" class="text-decoration:none f:sky-40 f:sky-60:hover f:medium f:sky-66.active ">
+          Gallery
+        </a>
+      </li>
+      <li>
+        <a href="/en/atributos/" class="text-decoration:none f:sky-40 f:sky-60:hover f:medium f:sky-66.active active">
+          Attributes
+        </a>
+      </li>
+      <li>
+        <a href="/en/actualidade/" class="text-decoration:none f:sky-40 f:sky-60:hover f:medium f:sky-66.active ">
+          News
+        </a>
+      </li>
+    </ul>
 
+    
+<div class="w:15% hidden block@md">
+      <div class="w:fit ml:auto flex gap:4 align-items:center bg:sky-90 p:4 r:100">
       
+        
+        <a href="/gl/atributos/colonizacion-humana/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  text:#002855">
+          gl
+        </a>
+      
+        
+        <a href="/es/atributos/colonizacion-humana/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  text:#002855">
+          es
+        </a>
+      
+        
+        <a href="/en/atributos/colonizacion-humana/" class="text-decoration:none f:14 h:40 square r:100 flex jc:center ai:center  bg:sky-66 f:white shadow:0|2|6|rgba(0,162,244,0.2)">
+          en
+        </a>
+      
+    </div>
+</div>
 
-    </li>
-  </ul>
+  </div>
 </nav>
 
+
+<script>
+  (function() {
+    const boton = document.getElementById('boton-menu');
+    const menu = document.getElementById('menu-enlaces');
+    
+    if (boton && menu) {
+      boton.addEventListener('click', function() {
+        
+        if (menu.classList.contains('hidden')) {
+          menu.classList.remove('hidden');
+          menu.classList.add('flex');
+        } else {
+          menu.classList.add('hidden');
+          menu.classList.remove('flex');
+        }
+      });
+    }
+  })();
+</script>
 
     
     <main class="container">
@@ -98,134 +143,298 @@
   <article class="mx:auto position:relative">
     
     
-    <header class="mb:40 max-w:800 mx:auto text:center">
+    <header class="mb:40 max-w:800 mx:auto text:center px:20">
       <h1 class="text:32 text:46@md font:bold text:#002855 line-height:1.2 mb:20">Epic work of human colonisation</h1>
       <p class="text:18 text:20@md text:gray-60 font:medium line-height:1.6">The survival of traditional farming systems on the steep slopes of river canyons supported by ancient techniques.</p>
     </header>
 
     
-    <section class="position:relative mb:50 group w:100vw">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+
+ 
+<section class="w:100vw mb:50 position:relative" data-component="carrusel">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
       
       
-      <div id="carrusel-atributos" class="flex flex:row overflow-x:auto overflow-y:hidden scroll-behavior:smooth gap:4 [&::-webkit-scrollbar]:display:none scroll-snap-type:x|mandatory">
-
-  
-    
-    <figure class="flex:shrink:0 display:block w:auto m:0 scroll-snap-align:start">
-      <img src="/gl/atributos/colonizacion-humana/bodegas_ronsel.webp" alt="bodegas_ronsel.webp" class="h:700 w:auto display:block">
-    </figure>
-  
-
-  
-    
-    <figure class="flex:shrink:0 display:block w:auto m:0 scroll-snap-align:start">
-      <img src="/gl/atributos/colonizacion-humana/cortezada.webp" alt="cortezada.webp" class="h:700 w:auto display:block">
-    </figure>
-  
-
-  
-    
-    <figure class="flex:shrink:0 display:block w:auto m:0 scroll-snap-align:start">
-      <img src="/gl/atributos/colonizacion-humana/san_fiz.webp" alt="san_fiz.webp" class="h:700 w:auto display:block">
-    </figure>
-  
-
-  
-    
-    <figure class="flex:shrink:0 display:block w:auto m:0 scroll-snap-align:start">
-      <img src="/gl/atributos/colonizacion-humana/souto_chao.webp" alt="souto_chao.webp" class="h:700 w:auto display:block">
-    </figure>
-  
-
-
-      </div>
+        
+          
+          
+          
+          
+          
+          <div class="swiper-slide !w:auto flex:shrink:0 m:0" style="width: auto !important;">
+            <figure class="m:0 r:6 overflow:hidden shadow:0|12|30|rgba(0,0,0,0.08) position:relative">
+              
+              <img src="/gl/atributos/colonizacion-humana/bodegas_ronsel.webp" alt="bodegas_ronsel.webp" class="h:350 h:700@md w:auto display:block" style="width: auto !important; object-fit: contain !important;">
+              
+              
+                <figcaption class="position:absolute bottom:0 left:0 right:0 p:40|15|15 bg:linear-gradient(to|top,rgba(0,0,0,0.85),transparent) flex flex:col align-items:center text:center gap:4">
+                  
+                  <span class="f:white f:medium f:13 text:15@md line-height:1.3 max-w:90% drop-shadow:0|2|4|rgba(0,0,0,0.5)">
+                    Harvesting on the banks of the Sil River
+                  </span>
+                  
+                  
+                    <span class="f:white f:normal f:11 italic opacity:0.6">
+                      © D. Estevez
+                    </span>
+                  
+                  
+                </figcaption>
+              
+              
+            </figure>
+          </div>
+        
       
-      <button onclick="moverCarrusel(-1)" class="position:absolute z:30 left:25 top:50% transform:translateY(-50%) bg:white p:12 r:100 b:none shadow:0|4|12|rgba(0,0,0,0.15) cursor:pointer display:none display:flex@md w:45 h:45 align-items:center justify-content:center" aria-label="Anterior">‹</button>
-      <button onclick="moverCarrusel(1)" class="position:absolute z:30 right:25 top:50% transform:translateY(-50%) bg:white p:12 r:100 b:none shadow:0|4|12|rgba(0,0,0,0.15) cursor:pointer display:none display:flex@md w:45 h:45 align-items:center justify-content:center" aria-label="Siguiente">›</button>
-    </section>
+        
+          
+          
+          
+          
+          
+          <div class="swiper-slide !w:auto flex:shrink:0 m:0" style="width: auto !important;">
+            <figure class="m:0 r:6 overflow:hidden shadow:0|12|30|rgba(0,0,0,0.08) position:relative">
+              
+              <img src="/gl/atributos/colonizacion-humana/cortezada.webp" alt="cortezada.webp" class="h:350 h:700@md w:auto display:block" style="width: auto !important; object-fit: contain !important;">
+              
+              
+                <figcaption class="position:absolute bottom:0 left:0 right:0 p:40|15|15 bg:linear-gradient(to|top,rgba(0,0,0,0.85),transparent) flex flex:col align-items:center text:center gap:4">
+                  
+                  <span class="f:white f:medium f:13 text:15@md line-height:1.3 max-w:90% drop-shadow:0|2|4|rgba(0,0,0,0.5)">
+                    Finca Cortezada
+                  </span>
+                  
+                  
+                    <span class="f:white f:normal f:11 italic opacity:0.6">
+                      © R. Vilanova
+                    </span>
+                  
+                  
+                </figcaption>
+              
+              
+            </figure>
+          </div>
+        
+      
+        
+          
+          
+          
+          
+          
+          <div class="swiper-slide !w:auto flex:shrink:0 m:0" style="width: auto !important;">
+            <figure class="m:0 r:6 overflow:hidden shadow:0|12|30|rgba(0,0,0,0.08) position:relative">
+              
+              <img src="/gl/atributos/colonizacion-humana/san_fiz.webp" alt="san_fiz.webp" class="h:350 h:700@md w:auto display:block" style="width: auto !important; object-fit: contain !important;">
+              
+              
+                <figcaption class="position:absolute bottom:0 left:0 right:0 p:40|15|15 bg:linear-gradient(to|top,rgba(0,0,0,0.85),transparent) flex flex:col align-items:center text:center gap:4">
+                  
+                  <span class="f:white f:medium f:13 text:15@md line-height:1.3 max-w:90% drop-shadow:0|2|4|rgba(0,0,0,0.5)">
+                    Terraced slope of the Miño in Belesar
+                  </span>
+                  
+                  
+                    <span class="f:white f:normal f:11 italic opacity:0.6">
+                      © R. Vilanova
+                    </span>
+                  
+                  
+                </figcaption>
+              
+              
+            </figure>
+          </div>
+        
+      
+        
+          
+          
+          
+          
+          
+          <div class="swiper-slide !w:auto flex:shrink:0 m:0" style="width: auto !important;">
+            <figure class="m:0 r:6 overflow:hidden shadow:0|12|30|rgba(0,0,0,0.08) position:relative">
+              
+              <img src="/gl/atributos/colonizacion-humana/souto_chao.webp" alt="souto_chao.webp" class="h:350 h:700@md w:auto display:block" style="width: auto !important; object-fit: contain !important;">
+              
+              
+                <figcaption class="position:absolute bottom:0 left:0 right:0 p:40|15|15 bg:linear-gradient(to|top,rgba(0,0,0,0.85),transparent) flex flex:col align-items:center text:center gap:4">
+                  
+                  <span class="f:white f:medium f:13 text:15@md line-height:1.3 max-w:90% drop-shadow:0|2|4|rgba(0,0,0,0.5)">
+                    Steep slope of Souto Chao
+                  </span>
+                  
+                  
+                    <span class="f:white f:normal f:11 italic opacity:0.6">
+                      © R. Vilanova
+                    </span>
+                  
+                  
+                </figcaption>
+              
+              
+            </figure>
+          </div>
+        
+      
+
+    </div>
+
+    
+    <div class="boton-anterior position:absolute z:30 left:25 top:50% transform:translateY(-50%) w:45 h:45 bg:white r:100 flex align-items:center justify-content:center shadow:0|4|12|rgba(0,0,0,0.15) cursor:pointer">
+      <span class="text:#002855 font:bold text:20 margin-right:2">‹</span>
+    </div>
+    
+    <div class="boton-siguiente position:absolute z:30 right:25 top:50% transform:translateY(-50%) w:45 h:45 bg:white r:100 flex align-items:center justify-content:center shadow:0|4|12|rgba(0,0,0,0.15) cursor:pointer">
+      <span class="text:#002855 font:bold text:20 margin-left:2">›</span>
+    </div>
+
+  </div>
+</section>
+
+<style>
+   
+  .mySwiper .boton-anterior.swiper-button-disabled,
+  .mySwiper .boton-siguiente.swiper-button-disabled {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+</style>
 
 
 
-
-    <div class="text:#002855 text:16 text:18@md line-height:1.8"><p>Socalcos, sucalcos, muras, paredes, muros, paredós, calzadas, are all names given to the crop terraces, a characteristic and singular feature of the Ribeira Sacra and, above all, a highly efficient water and soil resource.</p>
+    
+    <div class="text:#002855 text:16 text:18@md line-height:1.8 max-w:800 mx:auto px:20"><p>Socalcos, sucalcos, muras, paredes, muros, paredós, calzadas, are all names given to the crop terraces, a characteristic and singular feature of the Ribeira Sacra and, above all, a highly efficient water and soil resource.</p>
 <p>The socalcos, the spectacular terracing of agricultural cultivation on extremely steep slopes, are an epic work of human colonisation.</p>
 <p>This is a land that has specialised in viticulture since the Middle Ages, without forgetting the importance of other crops such as chestnuts and cherries. The unique nature, the monastic footprint and the peasant communities built this landscape, which is alive and functional to this day.</p>
 <h3 id="2494-ha-of-socalcos">2.494 ha of socalcos</h3>
 <h3 id="1177-inhabitants">1.177 inhabitants</h3>
 </div>
+
+    
+    
+    
+
   </article>
 </main>
-
-<script>
-  function moverCarrusel(direccion) {
-    const contenedor = document.getElementById('carrusel-atributos');
-    if (!contenedor) return;
-
-    const figuras = contenedor.getElementsByTagName('figure');
-    if (figuras.length === 0) return;
-
-    
-    
-    const anchoFoto = figuras[0].clientWidth || 600;
-
-    contenedor.scrollBy({
-      left: direccion * (anchoFoto + 4), 
-      behavior: 'smooth'
-    });
-  }
-</script>
-
-
-
-<style>
-   
-  #carrusel-atributos::-webkit-scrollbar {
-    display: none !important;
-  }
-   
-  #carrusel-atributos {
-    scrollbar-width: none !important;
-    -ms-overflow-style: none;
-  }
-</style>
 
 
     </main>
 
     
+    <footer data-editable="layouts/partials/footer.html:footer" class="p:40|20">
+  <div class="mx:auto flex flex:col flex:row@md justify-content:space-between align-items:center gap:30">
     
-<footer class="container">
-  <hr>
-  
-  <div class="grid">
-    <div>
-      <h6><strong>O Proxecto</strong></h6>
-      <ul>
-        <li><a href="#vue" class="secondary">Valor Universal Excepcional</a></li>
-        <li><a href="#atributos" class="secondary">Atributos del Bien</a></li>
-      </ul>
-    </div>
     
-    <div>
-      <h6><strong>Institucional</strong></h6>
-      <ul>
-        <li><a href="https://cultura.gal" target="_blank" rel="noopener" class="secondary">Xunta de Galicia</a></li>
-        <li><a href="https://unesco.org" target="_blank" rel="noopener" class="secondary">UNESCO</a></li>
-      </ul>
+    <div class="flex gap:20 align-items:center">
+      <img src="/img/gob.webp" alt="Gobierno" class="h:40 h:50@md w:auto">
+      <img src="/img/xuntaver.webp" alt="Xunta de Galicia" class="h:40 h:50@md w:auto">
     </div>
-  </div>
 
-  <hr>
+    
+    <div class="flex@md align-items:center jc:center gap:30">
+      <a href="#" class="text-decoration:none f:sky-20 f:14 f:medium hover:text-decoration:underline">
+        Legal texts
+      </a>
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="cursor:pointer bg:sky-66 color:white b:none w:40 square r:100 f:12 f:bold flex ai:center jc:center tracking:1 hover:bg:sky-80 transition:background-color|0.3s flex align-items:center gap:5 block mx:auto mt:30 mt:0@md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
 
-  
-  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--pico-spacing);">
-    <p><small>© 2026 Ribeira Sacra Paisaxe da Auga</small></p>
-    <ul style="display: flex; gap: var(--pico-spacing); list-style: none; margin: 0; padding: 0;">
-      <li><a href="/legal/aviso/" class="secondary"><small>Aviso Legal</small></a></li>
-      <li><a href="/legal/privacidade/" class="secondary"><small>Política de Privacidad</small></a></li>
-    </ul>
   </div>
 </footer>
+
+
+    
+    
+       
+
+  <style>
+     
+    #visual-editor-sidebar {
+        position: fixed; right: -480px; top: 50%; transform: translateY(-50%);
+        width: 460px; height: auto; max-height: 90vh; 
+        background-color: #ffffff !important; color: #0f172a !important; opacity: 0.98; 
+        box-shadow: -4px 0 35px rgba(0,0,0,0.15) !important;
+        z-index: 999999 !important; border-radius: 12px !important; padding: 24px 24px 0px 36px !important;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+        display: flex !important; flex-direction: column !important; box-sizing: border-box !important; transition: right 0.2s ease-in-out !important;
+    }
+    #visual-editor-sidebar p { font-size: 13px !important; color: #64748b !important; margin: 0 0 12px 0 !important; line-height: 1.4 !important; }
+    #visual-editor-sidebar span { word-break: break-all !important; font-weight: 600 !important; color: #0f172a !important; }
+
+     
+    #ed-class-input {
+        width: 100% !important;
+        height: 180px !important;
+        padding: 16px 0px !important;
+        background-color: transparent !important;  
+        color: #1e293b !important;  
+        font-family: monospace !important;
+        font-size: 16px !important;
+        line-height: 1.8 !important;
+        border: none !important;
+        border-radius: 6px !important;
+        outline: none !important;
+        margin-bottom: 16px !important;
+        box-sizing: border-box !important;
+        overflow-y: auto !important;
+        white-space: pre-wrap !important;
+        word-wrap: break-word !important;
+        font-weight: 600 !important;
+    }
+
+     
+    #ed-class-input .mcss-prefix { color: #6d28d9 !important; font-weight: 600 !important; display: inline-block !important; }     
+    #ed-class-input .mcss-struct { color: #0284c7 !important; font-weight: 600 !important; display: inline-block !important; }     
+    #ed-class-input .mcss-spacing { color: #e11d48 !important; font-weight: 600 !important; display: inline-block !important; }    
+    #ed-class-input .mcss-dimension { color: #b45309 !important; font-weight: 600 !important; display: inline-block !important; }  
+    #ed-class-input .mcss-value { color: #16a34a !important; font-weight: 600 !important; display: inline-block !important; }      
+
+    #visual-editor-sidebar button {
+        color: #0f172a !important; background-color: transparent !important; border: 1px solid #0f172a !important; padding: 14px !important;
+        border-radius: 100px !important; font-weight: 700 !important; font-size: 14px !important; cursor: pointer !important; width: 120px !important;
+        margin-top: auto !important; margin-left:auto !important; transition: all 0.15s ease !important;
+    }
+    #visual-editor-sidebar button:hover { background-color: #0f172a !important; color: #ffffff !important; border-color: #0f172a !important; }
+    #visual-editor-sidebar .status-msg { font-size: 12px !important; text-align: center !important; margin-top: 10px !important; min-height: 15px !important; font-weight: 500 !important; }
+  </style>
+
+  <div id="visual-editor-sidebar">
+      <p><span id="ed-file-info">Ninguno</span></p>
+      <div id="ed-class-input" contenteditable="true" spellcheck="false"></div>
+      <button id="ed-save-btn">Guardar</button>
+      <p id="ed-status-msg" class="status-msg"></p>
+  </div>
+
+  <script src="/js/editor-injector.js"></script>
+
+
+    
+
+<script src="/js/swiper-bundle.min.js"></script>
+<script>
+  
+  if (document.querySelector('.mySwiper')) {
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 25,
+      watchOverflow: false,
+      navigation: {
+        nextEl: ".boton-siguiente",
+        prevEl: ".boton-anterior",
+      },
+    });
+  }
+</script>
 
 
 </body>

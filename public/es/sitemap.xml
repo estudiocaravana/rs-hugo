@@ -206,6 +206,23 @@
                 href="http://localhost:1313/en/atributos/beleza-escenica/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/actualidade/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="gl"
+                href="http://localhost:1313/gl/actualidade/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/actualidade/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/actualidade/"
+                />
+  </url><url>
     <loc>http://localhost:1313/es/atributos/</loc>
     <xhtml:link
                 rel="alternate"
@@ -238,6 +255,40 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/docs/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/documental/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="gl"
+                href="http://localhost:1313/gl/documental/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/documental/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/documental/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/galeria/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="gl"
+                href="http://localhost:1313/gl/galeria/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/galeria/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/galeria/"
                 />
   </url><url>
     <loc>http://localhost:1313/es/</loc>

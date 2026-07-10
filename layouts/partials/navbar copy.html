@@ -1,0 +1,37 @@
+<!-- layouts/partials/navbar.html -->
+<nav class="flex justify-content:space-between align-items:center p:20|60 max-w:1200 mx:auto">
+  
+  <!-- Logotipo de la Ribeira Sacra -->
+  <div>
+    <a href="{{ .Site.Home.RelPermalink }}" class="text-decoration:none text:20 font:bold text:#002855 hover:text:#00a2f4 transition:color|0.2s">
+      Ribeira Sacra
+    </a>
+  </div>
+  
+  <!-- Enlaces de navegación y Selector de Idioma -->
+  <ul class="flex align-items:center gap:40 list-style:none margin:0 padding:0">
+    
+    <!-- Botonera de Idiomas Redondeada Fija -->
+    <li class="flex gap:6 align-items:center bg:#e3f2fd p:6 r:100">
+      
+      {{/* Recorremos todos los idiomas disponibles del sitio en orden estricto de peso */}}
+      {{ range .AllTranslations }}
+        
+        {{/* Comprobamos si el botón que estamos pintando coincide con la página que ve el usuario */}}
+        {{ $isCurrent := eq .Lang $.Lang }}
+        
+        <a href="{{ .RelPermalink }}" 
+           class="text-decoration:none font:bold text:14 uppercase p:6|14 r:100 transition:all|0.2s 
+                  {{ if $isCurrent }}
+                    bg:#00a2f4 text:white shadow:0|2|8|rgba(0,162,244,0.3)
+                  {{ else }}
+                    text:#002855 hover:bg:#00a2f4|10
+                  {{ end }}">
+          {{ .Lang }}
+        </a>
+
+      {{ end }}
+
+    </li>
+  </ul>
+</nav>

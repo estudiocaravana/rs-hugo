@@ -1,0 +1,61 @@
+{{/* layouts/partials/carrusel.html */}}
+<section class="w:100vw mb:50 position:relative" data-component="carrusel">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+      {{ range .Resources.ByType "image" }}
+        {{ if not (hasPrefix .Name "grafico") }}
+          
+          {{ $clave := .Name | replaceRE "\\.[^.]+$" "" }}
+          {{ $datosFoto := index hugo.Data.leyendas $clave }}
+          {{ $idiomaActual := $.Lang }}
+          
+          <div class="swiper-slide !w:auto flex:shrink:0 m:0" style="width: auto !important;">
+            <figure class="m:0 r:6 overflow:hidden shadow:0|12|30|rgba(0,0,0,0.08) position:relative">
+              
+              <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="h:350 h:700@md w:auto display:block" style="width: auto !important; object-fit: contain !important;">
+              
+              {{ if $datosFoto }}
+                <figcaption class="position:absolute bottom:0 left:0 right:0 p:40|15|15 bg:linear-gradient(to|top,rgba(0,0,0,0.85),transparent) flex flex:col align-items:center text:center gap:4">
+                  
+                  <span class="f:white f:medium f:13 text:15@md line-height:1.3 max-w:90% drop-shadow:0|2|4|rgba(0,0,0,0.5)">
+                    {{ index $datosFoto $idiomaActual }}
+                  </span>
+                  
+                  {{ if $datosFoto.autor }}
+                    <span class="f:white f:normal f:11 italic opacity:0.6">
+                      © {{ $datosFoto.autor }}
+                    </span>
+                  {{ end }}
+                  
+                </figcaption>
+              {{ end }}
+              
+            </figure>
+          </div>
+        {{ end }}
+      {{ end }}
+
+    </div>
+
+    {{/* Tus botones limpios de Master CSS enlazados al script global */}}
+    <div class="boton-anterior position:absolute z:30 left:25 top:50% transform:translateY(-50%) w:45 h:45 bg:white r:100 flex align-items:center justify-content:center shadow:0|4|12|rgba(0,0,0,0.15) cursor:pointer">
+      <span class="text:#002855 font:bold text:20 margin-right:2">‹</span>
+    </div>
+    
+    <div class="boton-siguiente position:absolute z:30 right:25 top:50% transform:translateY(-50%) w:45 h:45 bg:white r:100 flex align-items:center justify-content:center shadow:0|4|12|rgba(0,0,0,0.15) cursor:pointer">
+      <span class="text:#002855 font:bold text:20 margin-left:2">›</span>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* Cuando Swiper desactiva un botón, lo ocultamos por completo */
+  .mySwiper .boton-anterior.swiper-button-disabled,
+  .mySwiper .boton-siguiente.swiper-button-disabled {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+</style>
