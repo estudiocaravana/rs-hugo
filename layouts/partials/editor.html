@@ -58,5 +58,13 @@
       <p id="ed-status-msg" class="status-msg"></p>
   </div>
 
+  <script>
+    // Comprobamos si el bridge está encendido antes de cargar el editor
+    fetch('http://localhost:3000', { method: 'OPTIONS' }).catch(() => {
+        var sidebar = document.getElementById('visual-editor-sidebar');
+        if(sidebar) sidebar.style.display = 'none';
+        window.__EDITOR_DISABLED = true;
+    });
+  </script>
   <script src="{{ "js/editor-injector.js" | relURL }}"></script>
 {{ end }}

@@ -49,3 +49,19 @@ a[role="button"] {
   padding: 15px 30px;
   border-radius: 100px;
 }
+.video-responsivo {
+    position: relative;
+    padding-bottom: 56.25%; /* Esto equivale a la proporción 16:9 (9 dividido entre 16) */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.video-responsivo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+

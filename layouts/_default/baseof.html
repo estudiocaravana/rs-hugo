@@ -39,8 +39,8 @@
     <!-- Incluimos el componente Footer -->
     {{ partial "footer.html" . }}
 
-    <!-- Inyector Local del Editor Visual (solo desarrollo) -->
-    {{ if hugo.IsServer }}
+    <!-- Inyector Local del Editor Visual (Activado solo mediante npm run editor) -->
+    {{ if getenv "HUGO_EDITOR" }}
        {{ partial "editor.html" . }}
     {{ end }}
 

@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section data-editable="layouts/index.html:ruth" class="p:60|20 p:80|40@md bg:sky-88 bg:url(/img/ruth_retrato.webp)@lg bg:no-repeat bg:bottom|left bg:250">
+  <div class="max-w:1200 mx:auto text:center mb:50">
+    <p class="f:14 tracking:2 color:sky-60 mb:10">{{ .Params.pretitle }}</p>
+    <h2 class="f:30 max-w:360 f:black color:sky-20 mb:20 m:0 mx:auto lh:1.2">{{ .Params.title }}</h2>
+    <p class="max-w:700 mx:auto f:16 color:sky-20">{{ .Params.subtitle }}</p>
+  </div>
+</section>
+
+ <div class="bg:sky-88 pb:30">
+    {{ partial "carrusel.html" . }}
+ </div>
+
+{{ end }}

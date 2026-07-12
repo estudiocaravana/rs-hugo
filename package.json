@@ -1,0 +1,11 @@
+{
+  "name": "rs-hugo",
+  "version": "1.0.0",
+  "description": "Ribeira Sacra - Paisaxe da Auga",
+  "scripts": {
+    "start": "hugo server",
+    "editor": "HUGO_EDITOR=1 hugo server",
+    "bridge": "node editor-bridge.js",
+    "dev": "npm run bridge & npm run editor"
+  }
+}

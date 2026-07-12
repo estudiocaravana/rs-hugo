@@ -274,23 +274,6 @@
                 href="http://localhost:1313/en/documental/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/galeria/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="gl"
-                href="http://localhost:1313/gl/galeria/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/galeria/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/galeria/"
-                />
-  </url><url>
     <loc>http://localhost:1313/es/</loc>
     <xhtml:link
                 rel="alternate"
@@ -306,6 +289,23 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/galeria/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="gl"
+                href="http://localhost:1313/gl/galeria/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/galeria/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/galeria/"
                 />
   </url>
 </urlset>
