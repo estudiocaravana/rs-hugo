@@ -20,7 +20,125 @@
       {{ end }}
     </div>
   </header>
+
+<section class="bg:yellow-96 p:5vw|3vw" data-editable="layouts/index.html:ribeiraos">
+  <div class="flex@md gap:30 ai:center max-w:1200 mx:auto">
+    <div class="">
+      <img src="/img/ribeiraos.webp" alt="Ribeiraos" class="w:100% h:auto r:8px">
+    </div>
+    <div class="max-w:360 f:16">
+      {{ .Params.ribeiraos | markdownify }}
+      <a class="bg:sky-66 f:white bg:sky-74:hover my:20 inline-block" href="/ribeiraos" role="button">{{ .Params.rib_bt_text }}</a>
+    </div>
+  </div>
+</section>
+
 {{ partial "docs.html" . }}
+
+<section class="bg:yellow-96 p:5vw|3vw" data-editable="layouts/index.html:localizacion">
+
+<div class="max-w:1300 mx:auto flex flex:col gap:5vw">
+      <!-- 1. BLOQUE: LOCALIZACIÓN (Texto arriba, mapas abajo) -->
+    <div class="flex flex:col gap:30">
+        <div>
+            <h2 class="f:24 f:bold mb:10">{{ .Params.localizacion.title }}</h2>
+            <div class="white:normal ">
+                {{ .Params.localizacion.texto | markdownify }}
+            </div>
+        </div>
+        
+        <!-- Contenedor para las 4 imágenes de los mapas -->
+        <div class="grid grid-cols:2 grid-cols:4@md bg:sky-88 p:20 gap:10 gap:20@lg r:4">
+            <!-- Tip: Puedes usar un rango si las fotos están en una carpeta, o ponerlas a mano -->
+            <div class="bg:sky-88 r:4 shadow:md aspect:4/3 flex jc:center ai:center">
+                <img src="/img/loca/world.webp" alt="Mapa mundo" class="w:100% h:100% box-shadow:3|3|6|sky-84">
+            </div>
+            <div class="bg:sky-88 r:4 shadow:md aspect:4/3 flex jc:center ai:center">
+                <img src="/img/loca/europe.webp" alt="Mapa Europa" class="w:100% h:100% box-shadow:3|3|6|sky-84">
+            </div>
+            <div class="bg:sky-88 r:4 shadow:md aspect:4/3 flex jc:center ai:center">
+                <img src="/img/loca/spain.webp" alt="Mapa España" class="w:100% h:100% box-shadow:3|3|6|sky-84">
+            </div>
+            <div class="bg:sky-88 r:4 shadow:md aspect:4/3 flex jc:center ai:center">
+                <img src="/img/loca/galician.webp" alt="Mapa Galicia" class="w:100% h:100% box-shadow:3|3|6|sky-84">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 2. BLOQUE: LÍMITE DEL BIEN (Texto de introducción ancho) -->
+    <div class="max-w:700 mx:auto t:center">
+        <h2 class="f:24 f:bold mb:15">{{ .Params.limite.title }}</h2>
+        <div class="white:normal ">
+            {{ .Params.limite.texto | markdownify }}
+        </div>
+    </div>
+
+
+    <!-- 3. BLOQUE: MAPA DETALLADO + DATOS (Dos columnas en escritorio) -->
+    <div class="flex flex:col flex:row@md gap:40 ai:center">
+        
+        <!-- Columna Izquierda: Mapa grande (Ocupa 7 de 12 columnas en pantallas grandes) -->
+        <div class="bg:sky-88 p:20 r:4">
+            <img src="/img/planocan.webp" alt="Mapa detallado" class="w:100% h:auto box-shadow:6|6|12|sky-80">
+        </div>
+
+        <!-- Columna Derecha: Botón PDF y Datos del bien (Ocupa 5 de 12 columnas) -->
+        <div class="max-w:400 flex flex:col gap:35">
+
+            <!-- Caja 1: Ben Proposto -->
+            <div>
+                <h3 class="f:18 f:bold m:0">{{ .Params.datos_ben.proposto.title }}</h3>
+                <div class="f:bold color:red-50 my:5">{{ .Params.datos_ben.proposto.cifra }}</div>
+                <p class="m:0 lh:1.5">{{ .Params.datos_ben.proposto.texto }}</p>
+            </div>
+
+            <!-- Caja 2: Zona de Amortecemento -->
+            <div>
+                <h3 class="f:18 f:bold m:0">{{ .Params.datos_ben.amortecemento.title }}</h3>
+                <div class="f:bold color:green-60 my:5">{{ .Params.datos_ben.amortecemento.cifra }}</div>
+                <p class="m:0 lh:1.5">{{ .Params.datos_ben.amortecemento.texto }}</p>
+            </div>
+
+            <!-- Botón de descarga -->
+            <div>
+                <a href="/docs/limite.pdf" class="bg:sky-66 color:white m:20|0 inline-block" role="button">
+                    {{ .Params.limite.cta_text }}
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 4. BLOQUE: CRITERIO UNESCO (Texto centrado o destacado al final) -->
+    <div class="max-w:700 mt:20 mx:auto t:center">
+        <span class="color:sky-66 block mb:10">
+            {{ .Params.criterio.title }}
+        </span>
+        <h3 class="f:24 f:bold lh:1.3 max-w:400 mx:auto mb:10">
+            {{ .Params.criterio.subtitle }}
+        </h3>
+        <p>
+            {{ .Params.criterio.texto }}
+        </p>
+    </div>
+</div>
+
+</section>
+
+<section class="p:6vw|3vw bg:sky-88" data-editable="layouts/index.html:vue">
+    <div class="max-w:1300 mx:auto">
+      <h2 class="f:24 f:bold t:center mb:3vw">{{ .Params.vue.title }}</h2>
+    <div class="white:normal columns:1 columns:2@md gap:40 valign:top">
+        {{ .Params.vue.texto | markdownify }}
+    </div>
+
+    </div>
+    <div class="white:normal max-w:500 mx:auto my:3vw t:center f:sky-66>strong">
+        {{ .Params.vue.resumo | markdownify }}
+      </div>
+</section>
 
 {{ partial "grid-atributos.html" . }}
 

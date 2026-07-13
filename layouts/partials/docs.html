@@ -1,4 +1,4 @@
-<section data-editable="layouts/partials/docs.html:section" class="gap:40 p:90|20 mx:auto bg:#e3f2fd">
+<section data-editable="layouts/partials/docs.html:section" class="gap:40 p:90|20 mx:auto bg:sky-88">
 <div class="gap:80|40 mx:auto max-w:1600 grid-cols:1 grid-cols:3@md ai:end">
     {{/* Recorremos todos los elementos dentro de la sección 'docs' */}}
   {{ range (where .Site.RegularPages "Section" "docs").ByWeight }}
@@ -28,12 +28,12 @@
           {{ range .Params.botones }}
             {{ if eq .tipo "primary" }}
               <!-- Botón Azul Sólido (PDF) -->
-              <a href="{{ .link }}" class="px:30 py:10 bg:sky-66 f:white r:25 b:none text:center transition:background|0.2s bg:sky-80:hover text-decoration:none">
+              <a href="{{ .link }}" class="px:30 py:10 bg:sky-66 f:white r:25 b:none text:center transition:background|0.2s bg:sky-76:hover text-decoration:none">
                 {{ .texto }}
               </a>
             {{ else }}
               <!-- Botón Celeste Outline (WEB) -->
-              <a href="{{ .link }}" class="bg:#e3f2fd f:sky-66 px:30 py:10 r:25 b:1|solid|sky-66 text:center transition:all|0.2s bg:sky-80:hover text-decoration:none">
+              <a href="{{ .link }}" class="bg:transparent f:sky-66 px:30 py:10 r:25 b:1|solid|sky-66 text:center transition:all|0.2s bg:sky-90:hover text-decoration:none">
                 {{ .texto }}
               </a>
             {{ end }}

@@ -48,20 +48,11 @@ a[role="button"] {
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 100px;
+  transition: all 0.3s ease;
 }
-.video-responsivo {
-    position: relative;
-    padding-bottom: 56.25%; /* Esto equivale a la proporción 16:9 (9 dividido entre 16) */
-    height: 0;
-    overflow: hidden;
-    width: 100%;
-}
-
-.video-responsivo iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+/* Asegura que los párrafos de las columnas se alineen perfectamente arriba */
+.columns\:2\@md p {
+    break-inside: avoid;
+    margin-top: 0;
 }
 
