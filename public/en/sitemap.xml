@@ -257,6 +257,23 @@
                 href="http://localhost:1313/en/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/legal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="gl"
+                href="http://localhost:1313/gl/legal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/legal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/legal/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/actualidade/</loc>
     <xhtml:link
                 rel="alternate"
@@ -272,6 +289,23 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/actualidade/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/ribeiraos/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="gl"
+                href="http://localhost:1313/gl/ribeiraos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/ribeiraos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/ribeiraos/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/galeria/</loc>

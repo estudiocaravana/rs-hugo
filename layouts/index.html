@@ -16,7 +16,7 @@
 
       <p class="max-w:500 mx:auto">{{ .Params.hero.subtitle }}</p>
       {{ if .Params.hero.cta_text }}
-        <a class="bg:sky-66 color:white m:30|10 inline-block" href="{{ .Params.hero.cta_link }}" role="button">{{ .Params.hero.cta_text }}</a>
+        <a class="bg:sky-66 color:white m:30|10 inline-block" href="{{ "documental" | relLangURL }}" role="button">{{ .Params.hero.cta_text }}</a>
       {{ end }}
     </div>
   </header>
@@ -28,7 +28,7 @@
     </div>
     <div class="max-w:360 f:16">
       {{ .Params.ribeiraos | markdownify }}
-      <a class="bg:sky-66 f:white bg:sky-74:hover my:20 inline-block" href="/ribeiraos" role="button">{{ .Params.rib_bt_text }}</a>
+      <a class="bg:sky-66 f:white bg:sky-74:hover my:20 inline-block" href="{{ "ribeiraos" | relLangURL }}" role="button">{{ .Params.rib_bt_text }}</a>
     </div>
   </div>
 </section>

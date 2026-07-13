@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="container bg:sky-88 p:80|0" data-editable="layouts/actualidade/list.html:header">
+<section class="container bg:sky-88 p:5vw|3vw" data-editable="layouts/actualidade/list.html:header">
     <h1 class="text:center mb:60 f:30">{{ .Title }}</h1>
     
     <div class="max-w:1200px mx:auto d:flex ai:center jc:center gap:60 flex:wrap">
@@ -7,8 +7,8 @@
             <img src="{{ relURL "img/actualidade/Xornada_cipriano.webp" }}" alt="{{ .Params.cipriano.title }}" class="w:100% h:auto r:8px">
         </div>
         <div class="flex:1|1|400px d:flex flex:col jc:center">
-            <h2>{{ .Params.cipriano.title }}</h2>
-            <h3>{{ .Params.cipriano.subtitle }}</h3>
+            <h3 class="m:0 f:14 mb:6 font:regular">{{ .Params.cipriano.subtitle }}</h3>
+            <h2 class="f:24 f:32@md m:0 max-w:360 lh:1.2 color:sky-66">{{ .Params.cipriano.title }}</h2>
             <div class="white:normal">{{ .Params.cipriano.texto | markdownify }}</div>
         </div>
     </div>

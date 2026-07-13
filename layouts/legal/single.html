@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="p:5vw|3vw white:normal bg:sky-88" data-editable="layouts/legal/single.html:section">
+    <div class="max-w:800 mx:auto">
+        <h1 class="f:24 f:32@md f:bold mb:40 color:sky-20 t:center">{{ .Params.title }}</h1>
+        <!-- Imprime el contenido legal inyectando las etiquetas HTML de forma segura -->
+        <div class="flex flex:col gap:15
+                    {mt:35;f:18}>h2 
+                    {m:0}>p">
+            {{ .Params.content | safeHTML }}
+        </div>
+    </div>
+</section>
+{{ end }}

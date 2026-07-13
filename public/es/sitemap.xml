@@ -291,6 +291,23 @@
                 href="http://localhost:1313/en/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/ribeiraos/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="gl"
+                href="http://localhost:1313/gl/ribeiraos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/ribeiraos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/ribeiraos/"
+                />
+  </url><url>
     <loc>http://localhost:1313/es/galeria/</loc>
     <xhtml:link
                 rel="alternate"
@@ -306,6 +323,23 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/galeria/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/legal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="gl"
+                href="http://localhost:1313/gl/legal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/legal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/legal/"
                 />
   </url>
 </urlset>
