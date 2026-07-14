@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Actualidade on Ribeira Sacra: Paisaxe da Auga</title>
-		<link>http://localhost:1313/gl/actualidade/</link>
+		<link>http://localhost:56880/gl/actualidade/</link>
 		<description>Recent content in Actualidade on Ribeira Sacra: Paisaxe da Auga</description>
 		<generator>Hugo</generator>
 		<language>gl</language>
@@ -10,6 +10,6 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/gl/actualidade/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:56880/gl/actualidade/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

@@ -11,9 +11,9 @@
           {{ $idiomaActual := $.Lang }}
           
           <div class="swiper-slide !w:auto flex:shrink:0 m:0" style="width: auto !important;">
-            <figure class="m:0 r:6 overflow:hidden shadow:0|12|30|rgba(0,0,0,0.08) position:relative">
+            <figure class="m:12|0 r:6 overflow:hidden shadow:4|4|8|sky-84 position:relative">
               
-              <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="h:350 h:700@md w:auto display:block" style="width: auto !important; object-fit: contain !important;">
+              <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="h:90vh max-h:960px w:auto display:block" style="width: auto !important; object-fit: contain !important;">
               
               {{ if $datosFoto }}
                 <figcaption class="position:absolute bottom:0 left:0 right:0 p:40|15|15 bg:linear-gradient(to|top,rgba(0,0,0,0.85),transparent) flex flex:col align-items:center text:center gap:4">

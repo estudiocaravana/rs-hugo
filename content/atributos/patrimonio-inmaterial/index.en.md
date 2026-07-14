@@ -9,4 +9,4 @@ The river grape harvest, the numerous festivals and traditions, the sacralisatio
 
 ### 1,020 unique toponyms in the Ribeira Sacra area
 
-The muiñeira, a traditional Galician musical composition, has a 6/8 beat that was created from the toothed gear of a mill.
+### The muiñeira, a traditional Galician musical composition, has a 6/8 beat that was created from the toothed gear of a mill.

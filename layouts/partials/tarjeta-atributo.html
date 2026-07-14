@@ -1,4 +1,4 @@
-<article class="flex:col bg:yellow-98 r:6 overflow:hidden shadow:0|10|30|rgba(0,0,0,0.03) transition:all|0.2s hover:transform:translateY(-4) hover:shadow:0|15|35|rgba(0,0,0,0.08)">
+<article class="flex:col bg:white r:6 overflow:hidden shadow:4|4|8|yellow-92 transition:all|0.3s transform:translateY(-6):hover shadow:1|1|2|yellow-92:hover">
       <a href="{{ .RelPermalink }}" class="f:sky-66 text-decoration:none f:sky-80:hover transition:color|0.2s">
 
   {{/* 1. Intentamos pillar la foto declarada en el Front Matter */}}
@@ -13,10 +13,10 @@
     {{ end }}
   {{ end }}
   
-  <div class="square bg:yellow-98 p:10 overflow:hidden position:relative">
+  <div class="square bg:white p:10 r:6 overflow:hidden position:relative">
     {{ if $img }}
       {{ $webp := $img.Resize "600x webp q80" }}
-      <img src="{{ $webp.RelPermalink }}" width="{{ $webp.Width }}" height="{{ $webp.Height }}" alt="{{ .Title }}" class="w:full h:full object-fit:cover display:block">
+      <img src="{{ $webp.RelPermalink }}" width="{{ $webp.Width }}" height="{{ $webp.Height }}" alt="{{ .Title }}" class="w:full h:full object-fit:cover r:4 display:block">
     {{ else }}
       <div class="w:full h:full flex justify-content:center align-items:center f:xs f:gray-40 italic">Sen imaxe</div>
     {{ end }}
