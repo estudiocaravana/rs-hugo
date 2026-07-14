@@ -28,7 +28,7 @@
           {{ range .Params.botones }}
             {{ if eq .tipo "primary" }}
               <!-- Botón Azul Sólido (PDF) -->
-              <a href="{{ .link }}" class="px:30 py:10 bg:sky-66 f:white r:25 b:none text:center transition:background|0.2s bg:sky-76:hover text-decoration:none">
+              <a href="{{ .link }}" target="_blank" class="px:30 py:10 bg:sky-66 f:white r:25 b:none text:center transition:background|0.2s bg:sky-76:hover text-decoration:none">
                 {{ .texto }}
               </a>
             {{ else }}

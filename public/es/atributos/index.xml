@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Atributos on Ribeira Sacra: Paisaje del Agua</title>
-		<link>http://localhost:56880/es/atributos/</link>
+		<link>http://localhost:1313/es/atributos/</link>
 		<description>Recent content in Atributos on Ribeira Sacra: Paisaje del Agua</description>
 		<generator>Hugo</generator>
 		<language>es</language>
@@ -10,47 +10,47 @@
 		
 		
 		
-			<atom:link href="http://localhost:56880/es/atributos/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/es/atributos/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Patrimonio inmaterial asociado al agua</title>
-				<link>http://localhost:56880/es/atributos/patrimonio-inmaterial/</link>
+				<link>http://localhost:1313/es/atributos/patrimonio-inmaterial/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:56880/es/atributos/patrimonio-inmaterial/</guid>
+				<guid>http://localhost:1313/es/atributos/patrimonio-inmaterial/</guid>
 				<description>&lt;p&gt;Los nombres de los ríos principales de la Ribeira Sacra provienen de raíces paleoeuropeas que significan agua. Tal es la esencia de esta tierra húmeda, empapada también en lo inmaterial del espíritu del agua, que pervive en los hechizos de las mouras que guardan sus fuentes; en los tesoros ardientes, que siempre acabarán sumergidos en el río; en el amor de sus gentes por las xacias, que moran en los pozos profundos de los ríos; en aquellas armas ofrendadas al Sil, en aquella «religión de las fuentes»; o en las divinas aguas que perseguía Martiño de Dumio fundador de las primeras comunidades monásticas de esta Ribeira.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Formas ancestrales de ocupar el territorio</title>
-				<link>http://localhost:56880/es/atributos/formas-ancestrais/</link>
+				<link>http://localhost:1313/es/atributos/formas-ancestrais/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:56880/es/atributos/formas-ancestrais/</guid>
+				<guid>http://localhost:1313/es/atributos/formas-ancestrais/</guid>
 				<description>&lt;p&gt;Es el agua la que en muchos casos delimita las parroquias, unidades identitarias en el espacio rural. Los ríos, pues, unen y separan. Numerosas aldeas construyen su caserío en la bocarribeira, donde comienzan las pendientes y los socalcos, las terrazas, descienden al abismo.&lt;/p&gt;&#xA;&lt;p&gt;Uno de los rasgos más significativos es el minifundismo parcelario extremo, que deja su huella en el paisaje. Un parcelario definido por fórmulas tradicionales de propiedad y de aprovechamiento de la tierra como la cavadura, medida tradicional de superficie y de trabajo: el terreno que puede labrar una persona en un día para su sustento.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>La huella eremítica y monástica</title>
-				<link>http://localhost:56880/es/atributos/pegada-monastica/</link>
+				<link>http://localhost:1313/es/atributos/pegada-monastica/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:56880/es/atributos/pegada-monastica/</guid>
+				<guid>http://localhost:1313/es/atributos/pegada-monastica/</guid>
 				<description>&lt;p&gt;La relación armónica entre el agua y la tierra, entre el espacio cultivado y el espacio construido es una herencia de las comunidades religiosas. Las huellas del papel de los monasterios en la génesis de la cultura hidráulica del territorio se relacionan con los aforamientos de tierras y molinos de agua a través de la historia.&lt;/p&gt;&#xA;&lt;p&gt;Los eremitorios y el bosque de iglesias y monasterios ilustran una etapa esencia del proceso evolutivo del paisaje cultural del agua. Algunas iglesias se alejaron de la orientación canónica este-oeste, para situarse como balcones sobre los ríos, a medio camino entre el agua y el cielo.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Obra épica de colonización humana</title>
-				<link>http://localhost:56880/es/atributos/colonizacion-humana/</link>
+				<link>http://localhost:1313/es/atributos/colonizacion-humana/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:56880/es/atributos/colonizacion-humana/</guid>
+				<guid>http://localhost:1313/es/atributos/colonizacion-humana/</guid>
 				<description>&lt;p&gt;Socalcos, sucalcos, muras, paredes, muros, paredós, calzadas, son todos ellos nombres que reciben las terrazas de cultivo, un rasgo característico y singular de la Ribeira Sacra y, sobre todo, un ingenio de alta eficiencia hídrica y edáfica.&lt;/p&gt;&#xA;&lt;p&gt;Los socalcos, el espectacular aterrazamiento del cultivo agrícola en pendientes extremadamente abruptas, son una obra épica de colonización humana.&lt;/p&gt;&#xA;&lt;p&gt;Esta es una tierra que desde la Edad Media se especializa en viticultura, sin obviar la importancia de otros cultivos como la castaña o la cereza. La naturaleza singular, la huella monástica y las comunidades campesinas construyeron este paisaje, vivo y funcional hasta el presente.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Denso y variado patrimonio hidráulico</title>
-				<link>http://localhost:56880/es/atributos/patrimonio-hidraulico/</link>
+				<link>http://localhost:1313/es/atributos/patrimonio-hidraulico/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:56880/es/atributos/patrimonio-hidraulico/</guid>
+				<guid>http://localhost:1313/es/atributos/patrimonio-hidraulico/</guid>
 				<description>&lt;p&gt;Un excepcional, denso y diverso patrimonio hidráulico que se manifiesta en el extenso catálogo de soluciones de aprovechamientos energéticos desde la Edad Media hasta mediados del siglo XX, y constituye un auténtico catálogo de la historia de la energía hidráulica, exponentes de la revolución tecnológica medieval y de la irrupción de la hidroelectricidad.&lt;/p&gt;&#xA;&lt;p&gt;Sus elementos destacados son los centenares de vestigios de molinos de agua que se desplegaron entre el siglo XI y el XIX, las primeras minicentrales que marcan la emergencia de la hidroelectricidad a finales del siglo XIX, los saltos hidroeléctricos que ilustran los logros de la ingeniería en la primera mitad del siglo XX, y el inmenso repertorio de pequeñas obras creadas a lo largo y ancho del paisaje cultural.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Un territorio de gran belleza escénica</title>
-				<link>http://localhost:56880/es/atributos/beleza-escenica/</link>
+				<link>http://localhost:1313/es/atributos/beleza-escenica/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:56880/es/atributos/beleza-escenica/</guid>
+				<guid>http://localhost:1313/es/atributos/beleza-escenica/</guid>
 				<description>&lt;p&gt;La unión de los ríos Miño y Sil y de cientos de hilos de agua conforma un territorio de altos cañones y valles fluviales, por donde el agua discurre entre abruptas pendientes.&lt;/p&gt;&#xA;&lt;p&gt;A la franja de terreno que desde el altiplano se asoma a las escarpadas vertientes se la conoce como bocarribeira. Las bocarribeiras del Miño y del Sil en Ribeira Sacra son asiento de numerosas aldeas que otean el fondo del valle.&lt;/p&gt;</description>
 			</item>
 	</channel>

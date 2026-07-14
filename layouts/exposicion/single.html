@@ -1,0 +1,9 @@
+{{ define "main" }}
+ <div class="bg:sky-88 p:1vw|3vw" data-editable="layouts/ribeiraos/single.html:header">
+    <h1 class="f:10vw f:white t:center pb:1vw lh:1">{{ .Params.title }}</h1>
+ </div>
+
+  <div class="bg:sky-88 pb:30">
+    {{ partial "carrusel.html" . }}
+ </div>
+{{ end }}

@@ -21,6 +21,16 @@
     </div>
   </header>
 
+<div class="w:100% aspect:1920/800">
+    <iframe class="w:100% h:100%"
+        src="{{ .Params.video }}"
+        frameborder="0" 
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        title="Ribeira Sacra Paisaxe da Auga. Documental en galego">
+    </iframe>
+</div>
+
 <section class="bg:yellow-96 p:5vw|3vw" data-editable="layouts/index.html:ribeiraos">
   <div class="flex@md gap:30 ai:center max-w:1200 mx:auto">
     <div class="">
@@ -102,7 +112,7 @@
 
             <!-- Botón de descarga -->
             <div>
-                <a href="/docs/limite.pdf" class="bg:sky-66 color:white m:20|0 inline-block" role="button">
+                <a href="/pdf/PlanoCandidatura.pdf" target="_blank" class="bg:sky-66 color:white m:20|0 inline-block" role="button">
                     {{ .Params.limite.cta_text }}
                 </a>
             </div>
