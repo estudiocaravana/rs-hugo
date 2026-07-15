@@ -7,5 +7,8 @@
     "editor": "HUGO_EDITOR=1 hugo server",
     "bridge": "node editor-bridge.js",
     "dev": "npm run bridge & npm run editor"
+  },
+  "devDependencies": {
+    "@master/css": "^1.37.8"
   }
 }
