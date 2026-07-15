@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "npm ci && npx master-css build 'layouts/**/*.html' content/**/*.md --output static/css/master.css && hugo --gc --minify"
+  command = "hugo --gc --minify"
 
 [context.production.environment]
   HUGO_VERSION = "0.140.0"
