@@ -15,7 +15,7 @@
 
 
     {{/* 4. TEXTO INDIVIDUAL */}}
-    <div class="lh:1.5 max-w:800 mx:auto mt:5vw px:20 {f:sky-68;bt:1|solid|sky-64;pt:20;px:200:lg;mt:40}0>h3">{{ .Content }}</div>
+    <div class="lh:1.5 max-w:800 mx:auto mt:5vw px:20 {f:sky-68;f:semibold;f:18;bt:1|solid|sky-64;pt:20;max-w:400;block;mx:auto;mt:40}0>h3">{{ .Content }}</div>
 
     {{/* 5. GRÁFICO EXCLUSIVO AL FINAL */}}
     {{ $grafico := .Resources.GetMatch "grafico.*" }}

@@ -1,6 +1,6 @@
 ---
 title: "A territory of great scenic beauty"
-weight: 6
+weight: 1
 description: "The spectacular canyons and river valleys sustain and single out the waterscape of the Ribeira Sacra. The deep, spectacular and successive loops are its emblem."
 ---
 The union of the rivers Miño and Sil and hundreds of watercourses form a territory of high canyons and deep river valleys, where the water flows between steep slopes.

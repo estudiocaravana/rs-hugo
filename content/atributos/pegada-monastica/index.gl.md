@@ -1,6 +1,6 @@
 ---
 title: "A pegada eremítica e monástica"
-weight: 3
+weight: 5
 description: "A presencia eremítica e monástica forxou boa parte dos trazos distintivos e funcionais da paisaxe cultural da auga."
 ---
 A relación harmónica entre a auga e a terra, entre o espazo cultivado e o espazo construído é unha herdanza das comunidades relixiosas. A pegada do papel dos mosteiros na xénese da cultura hidráulica do territorio relaciónase cos aforamentos de terras e muíños de auga a través da historia.

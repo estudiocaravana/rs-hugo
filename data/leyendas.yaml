@@ -40,13 +40,13 @@ leiravella:
   en: "Micro-plots in Leiravella"
   autor: "R. Vilanova"
 
-pincelo_belesar:
+1_pincelo_belesar:
   gl: "Socalcos na ribeira do río Miño"
   es: "Socalcos en la ribera del río Miño"
   en: "Socalcos on the banks of the river Miño"
   autor: "R. Vilanova"
 
-santo_estevo-1:
+1_santo_estevo-1:
   gl: "Mosteiro de Santo Estevo de Ribas de Sil"
   es: "Monasterio de Santo Estevo de Ribas de Sil"
   en: "Santo Estevo de Ribas de Sil Monastery"
@@ -136,7 +136,7 @@ auga:
   en: "Aguacaída Waterfall"
   autor: "R. Vilanova"
 
-cabo:
+1_cabo:
   gl: "Meandro do Cabo do Mundo"
   es: "Meandro de O Cabo do Mundo"
   en: "Meander of O Cabo do Mundo"

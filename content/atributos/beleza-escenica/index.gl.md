@@ -1,6 +1,6 @@
 ---
 title: "Un territorio de gran beleza escénica"
-weight: 6
+weight: 1
 description: "Os espectaculares canóns e vales fluviais sustentan e singularizan a paisaxe da auga da Ribeira Sacra. Os profundos, espectaculares e sucesivos anllos son o seu emblema."
 ---
 A unión dos ríos Miño e Sil e de centos de fíos de auga conforma un territorio de altos canóns e vales fluviais profundos, por onde a auga discorre entre abruptas pendentes.

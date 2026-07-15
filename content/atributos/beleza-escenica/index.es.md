@@ -1,6 +1,6 @@
 ---
 title: "Un territorio de gran belleza escénica"
-weight: 6
+weight: 1
 description: "Los espectaculares cañones y valles fluviales sustentan y singularizan el paisaje del agua de la Ribeira Sacra. Los profundos, espectaculares y sucesivos meandros son su emblema."
 ---
 La unión de los ríos Miño y Sil y de cientos de hilos de agua conforma un territorio de altos cañones y valles fluviales, por donde el agua discurre entre abruptas pendientes.
