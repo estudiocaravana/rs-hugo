@@ -1,6 +1,6 @@
 # hugo.toml - Configuración Base Multilingüe para la Ribeira Sacra
 
-baseURL = 'https://ribeirasacrapaisaxedaauga.gal'
+baseURL = '/'
 title = 'Ribeira Sacra: Paisaxe da Auga'
 
 # Desactivamos taxonomías innecesarias para mantener el HTML semántico y limpio

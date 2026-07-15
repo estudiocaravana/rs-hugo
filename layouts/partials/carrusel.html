@@ -7,7 +7,7 @@
         {{ if not (hasPrefix .Name "grafico") }}
           
           {{ $clave := .Name | replaceRE "\\.[^.]+$" "" }}
-          {{ $datosFoto := index hugo.Data.leyendas $clave }}
+          {{ $datosFoto := index site.Data.leyendas $clave }}
           {{ $idiomaActual := $.Lang }}
           
           <div class="swiper-slide !w:auto flex:shrink:0 m:0" style="width: auto !important;">
