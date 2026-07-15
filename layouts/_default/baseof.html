@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html dir="ltr">
 <!-- Hugo inyecta de forma 100% nativa el código del idioma actual (gl, es o en) -->
 <html lang="{{ .Lang }}">
 <head>
@@ -45,6 +45,7 @@
   // Esta inicialización servirá para CUALQUIER página que llame al partial
   if (document.querySelector('.mySwiper')) {
     var swiper = new Swiper(".mySwiper", {
+      initialSlide: 0,
       slidesPerView: "auto",
       centeredSlides: true,
       spaceBetween: 25,
