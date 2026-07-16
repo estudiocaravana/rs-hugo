@@ -1,1 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Ribeira Sacra: Water Landscape</title><link>/en/docs/</link><description>Recent content in Docs on Ribeira Sacra: Water Landscape</description><generator>Hugo</generator><language>en</language><atom:link href="/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Executive summary</title><link>/en/docs/resumen-executivo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/docs/resumen-executivo/</guid><description/></item><item><title>We are heritage</title><link>/en/docs/somos-patrimonio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/docs/somos-patrimonio/</guid><description/></item><item><title>Inscription form</title><link>/en/docs/formulario-inscricion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/docs/formulario-inscricion/</guid><description/></item><item><title>Heritage of Cultural Interest (BIC)</title><link>/en/docs/ben-interese-cultural/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/docs/ben-interese-cultural/</guid><description/></item><item><title>Waterscapes</title><link>/en/docs/waterscapes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/docs/waterscapes/</guid><description/></item><item><title>Fontes</title><link>/en/docs/fontes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/docs/fontes/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Docs on Ribeira Sacra: Water Landscape</title>
+		<link>//localhost:1313/en/docs/</link>
+		<description>Recent content in Docs on Ribeira Sacra: Water Landscape</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<atom:link href="//localhost:1313/en/docs/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Executive summary</title>
+				<link>//localhost:1313/en/docs/resumen-executivo/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/docs/resumen-executivo/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>We are heritage</title>
+				<link>//localhost:1313/en/docs/somos-patrimonio/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/docs/somos-patrimonio/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Inscription form</title>
+				<link>//localhost:1313/en/docs/formulario-inscricion/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/docs/formulario-inscricion/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Heritage of Cultural Interest (BIC)</title>
+				<link>//localhost:1313/en/docs/ben-interese-cultural/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/docs/ben-interese-cultural/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Waterscapes</title>
+				<link>//localhost:1313/en/docs/waterscapes/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/docs/waterscapes/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fontes</title>
+				<link>//localhost:1313/en/docs/fontes/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/en/docs/fontes/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

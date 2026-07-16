@@ -1,1 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ruth Matilda Anderson en Ribeira Sacra on Ribeira Sacra: Paisaje del Agua</title><link>/es/galeria/</link><description>Recent content in Ruth Matilda Anderson en Ribeira Sacra on Ribeira Sacra: Paisaje del Agua</description><generator>Hugo</generator><language>es</language><atom:link href="/es/galeria/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Ruth Matilda Anderson en Ribeira Sacra on Ribeira Sacra: Paisaje del Agua</title>
+		<link>//localhost:1313/es/galeria/</link>
+		<description>Recent content in Ruth Matilda Anderson en Ribeira Sacra on Ribeira Sacra: Paisaje del Agua</description>
+		<generator>Hugo</generator>
+		<language>es</language>
+		
+		
+		
+		
+			<atom:link href="//localhost:1313/es/galeria/index.xml" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>
