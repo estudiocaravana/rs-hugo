@@ -1,6 +1,6 @@
 ---
 title: "Formas ancestrales de ocupar el territorio"
-weight: 2
+weight: 5
 description: "Un paisaje de miles de minúsculos predios generados por fórmulas ancestrales de propiedad y gestión de la tierra, adaptados a un abrupto territorio."
 ---
 Es el agua la que en muchos casos delimita las parroquias, unidades identitarias en el espacio rural. Los ríos, pues, unen y separan. Numerosas aldeas construyen su caserío en la bocarribeira, donde comienzan las pendientes y los socalcos, las terrazas, descienden al abismo.

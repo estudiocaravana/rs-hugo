@@ -26,11 +26,11 @@
 				<description>&lt;p&gt;A unión dos ríos Miño e Sil e de centos de fíos de auga conforma un territorio de altos canóns e vales fluviais profundos, por onde a auga discorre entre abruptas pendentes.&lt;/p&gt;&#xA;&lt;p&gt;A franxa de terreo que desde o altiplano se asoma ás escarpadas vertentes é coñecida como bocarribeira. As bocarribeiras do Miño e do Sil na Ribeira Sacra son asento de numerosas aldeas que outean o fondo do val.&lt;/p&gt;</description>
 			</item>
 			<item>
-				<title>Formas ancestrais de ocupar o territorio</title>
-				<link>//localhost:1313/gl/atributos/formas-ancestrais/</link>
+				<title>Denso e variado patrimonio hidráulico</title>
+				<link>//localhost:1313/gl/atributos/patrimonio-hidraulico/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/gl/atributos/formas-ancestrais/</guid>
-				<description>&lt;p&gt;É a auga a que en moitos casos delimita as parroquias, unidades identitarias no espazo rural. Os ríos, pois, unen e separan. Numerosas aldeas constrúen a súa casaría na bocarribeira, onde comezan as pendentes, e os socalcos descenden ao abismo.&lt;/p&gt;&#xA;&lt;p&gt;Un dos trazos máis significativos é o minifundismo parcelario extremo, que deixa a súa pegadas na paisaxe. Un parcelario definido por fórmulas tradicionais de propiedade e de aproveitamento da terra como a cavadura, medida tradicional de superficie e de traballo: o terreo que pode labrar unha persoa nun día para o seu sustento.&lt;/p&gt;</description>
+				<guid>//localhost:1313/gl/atributos/patrimonio-hidraulico/</guid>
+				<description>&lt;p&gt;Un excepcional, denso e diverso patrimonio hidráulico que se manifesta no extenso catálogo de solucións de aproveitamentos enerxéticos desde a Idade Media ata mediados do século XX, e constitúe un auténtico catálogo da historia da enerxía hidráulica, expoñentes da revolución tecnolóxica medieval e da irrupción da hidroelectricidade.&lt;/p&gt;&#xA;&lt;p&gt;O seus elementos destacados son os centenares de vestixios de muíños de auga que se despregaron entre o século XI e o XIX, as primeiras minicentrais que marcan a emerxencia da hidroelectricidade a finais do século XIX, os saltos hidroeléctricos que ilustran os logros da enxeñería na primeira metade do século XX, e o inmenso repertorio de pequenas obras creadas ao longo e ancho da paisaxe cultural.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Somos patrimonio</title>
@@ -40,24 +40,10 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Denso e variado patrimonio hidráulico</title>
-				<link>//localhost:1313/gl/atributos/patrimonio-hidraulico/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/gl/atributos/patrimonio-hidraulico/</guid>
-				<description>&lt;p&gt;Un excepcional, denso e diverso patrimonio hidráulico que se manifesta no extenso catálogo de solucións de aproveitamentos enerxéticos desde a Idade Media ata mediados do século XX, e constitúe un auténtico catálogo da historia da enerxía hidráulica, expoñentes da revolución tecnolóxica medieval e da irrupción da hidroelectricidade.&lt;/p&gt;&#xA;&lt;p&gt;O seus elementos destacados son os centenares de vestixios de muíños de auga que se despregaron entre o século XI e o XIX, as primeiras minicentrais que marcan a emerxencia da hidroelectricidade a finais do século XIX, os saltos hidroeléctricos que ilustran os logros da enxeñería na primeira metade do século XX, e o inmenso repertorio de pequenas obras creadas ao longo e ancho da paisaxe cultural.&lt;/p&gt;</description>
-			</item>
-			<item>
 				<title>Formulario de inscrición</title>
 				<link>//localhost:1313/gl/docs/formulario-inscricion/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>//localhost:1313/gl/docs/formulario-inscricion/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Ben de Interese Cultural (BIC)</title>
-				<link>//localhost:1313/gl/docs/ben-interese-cultural/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/gl/docs/ben-interese-cultural/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -73,6 +59,20 @@
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>//localhost:1313/gl/atributos/pegada-monastica/</guid>
 				<description>&lt;p&gt;A relación harmónica entre a auga e a terra, entre o espazo cultivado e o espazo construído é unha herdanza das comunidades relixiosas. A pegada do papel dos mosteiros na xénese da cultura hidráulica do territorio relaciónase cos aforamentos de terras e muíños de auga a través da historia.&lt;/p&gt;&#xA;&lt;p&gt;Os eremitorios e o bosque de igrexas e mosteiros ilustran unha etapa esencial do proceso evolutivo da paisaxe cultural da auga. Algunhas igrexas afastáronse da orientación canónica leste-oeste, para situarse como balcóns sobre os ríos, a medio camiño entre a auga e o ceo.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Ben de Interese Cultural (BIC)</title>
+				<link>//localhost:1313/gl/docs/ben-interese-cultural/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/gl/docs/ben-interese-cultural/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Formas ancestrais de ocupar o territorio</title>
+				<link>//localhost:1313/gl/atributos/formas-ancestrais/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/gl/atributos/formas-ancestrais/</guid>
+				<description>&lt;p&gt;É a auga a que en moitos casos delimita as parroquias, unidades identitarias no espazo rural. Os ríos, pois, unen e separan. Numerosas aldeas constrúen a súa casaría na bocarribeira, onde comezan as pendentes, e os socalcos descenden ao abismo.&lt;/p&gt;&#xA;&lt;p&gt;Un dos trazos máis significativos é o minifundismo parcelario extremo, que deixa a súa pegadas na paisaxe. Un parcelario definido por fórmulas tradicionais de propiedade e de aproveitamento da terra como a cavadura, medida tradicional de superficie e de traballo: o terreo que pode labrar unha persoa nun día para o seu sustento.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Waterscapes</title>

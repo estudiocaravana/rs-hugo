@@ -1,6 +1,6 @@
 ---
 title: "Denso e variado patrimonio hidráulico"
-weight: 3
+weight: 2
 description: "Un inmenso repertorio de obras que aproveitan o poder da auga, desde as humildes fontes de beber e os innumerables muíños de auga tradicionais ata as obras de enxeñería dos saltos hidroeléctricos do século XX."
 ---
 Un excepcional, denso e diverso patrimonio hidráulico que se manifesta no extenso catálogo de solucións de aproveitamentos enerxéticos desde a Idade Media ata mediados do século XX, e constitúe un auténtico catálogo da historia da enerxía hidráulica, expoñentes da revolución tecnolóxica medieval e da irrupción da hidroelectricidade.

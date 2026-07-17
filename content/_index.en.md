@@ -45,7 +45,7 @@ datos_ben:
 
 criterio:
   title: "Criteria"
-  subtitle: "According to UNESCO criteria, it is presented under criterion (v)"
+  subtitle: "According to UNESCO Operational Guidelines, it is presented under criterion (v)"
   texto: "To be an outstanding example of a traditional human settlement, land-use, or sea-use which is representative of a culture (or cultures), or human interaction with the environment especially when it has become vulnerable under the impact of irreversible change."
 vue:
   title: "Outstanding Universal Value (OUV)"

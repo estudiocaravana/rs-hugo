@@ -47,7 +47,7 @@ datos_ben:
 
 criterio:
   title: "Criterio"
-  subtitle: "Segundo os criterios da UNESCO, preséntase baixo o criterio (v)"
+  subtitle: "Segundo as Directrices Prácticas da UNESCO, preséntase baixo o criterio (v)"
   texto: "Ser un exemplo destacado de formas tradicionais de asentamento humano ou de utilización da terra ou do mar, representativas dunha cultura (ou de varias culturas), ou de interacción do home coa contorna, sobre todo cando este se volveu vulnerable debido ao impacto provocado polos cambios irreversibles."
 vue:
   title: "Valor Universal Excepcional (VUE)"

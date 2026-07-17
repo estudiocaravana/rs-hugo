@@ -1,6 +1,6 @@
 ---
 title: "Formas ancestrais de ocupar o territorio"
-weight: 2
+weight: 5
 description: "Unha paisaxe de milleiros de minúsculos predios xerados por fórmulas ancestrais de propiedade e xestión da terra, adaptados a un abrupto territorio."
 ---
 É a auga a que en moitos casos delimita as parroquias, unidades identitarias no espazo rural. Os ríos, pois, unen e separan. Numerosas aldeas constrúen a súa casaría na bocarribeira, onde comezan as pendentes, e os socalcos descenden ao abismo.

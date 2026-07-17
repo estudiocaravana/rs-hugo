@@ -1,6 +1,6 @@
 ---
 title: "Epic work of human colonisation"
-weight: 4
+weight: 3
 description: "The survival of traditional farming systems on the steep slopes of river canyons supported by ancient techniques."
 ---
 Socalcos, sucalcos, muras, paredes, muros, paredós, calzadas, are all names given to the crop terraces, a characteristic and singular feature of the Ribeira Sacra and, above all, a highly efficient water and soil resource.

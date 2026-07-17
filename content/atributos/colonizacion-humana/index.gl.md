@@ -1,6 +1,6 @@
 ---
 title: "Obra épica de colonización humana"
-weight: 4
+weight: 3
 description: "A pervivencia dos sistemas tradicionais de cultivo nas vertentes escarpadas dos canóns fluviais sustentada en técnicas milenarias."
 ---
 Socalcos, sucalcos, muras, paredes, muros, paredós, calzadas, son todos eles nomes que reciben as terrazas de cultivo, un trazo característico e singular da Ribeira Sacra e, sobre todo, un enxeño da alta eficiência hídrica e edáfica.

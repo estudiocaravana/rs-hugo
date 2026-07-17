@@ -1,6 +1,6 @@
 ---
 title: "The hermit and monastic footprint"
-weight: 5
+weight: 4
 description: "The hermit and monastic presence shaped much of the distinctive and functional traits of the cultural waterscape."
 ---
 The harmonious relationship between water and land, between cultivated space and built space is a heritage of religious communities. The traces of the role of the monasteries in the origin of the hydraulic culture of the territory are related to the outcrops of land and water mills throughout history.
