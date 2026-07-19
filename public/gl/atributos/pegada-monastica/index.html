@@ -333,16 +333,16 @@
     
     <nav class="flex justify-content:space-between max-w:600 mx:auto mt:40 mb:5vw px:20 gap:30">
       
-      <a href="/gl/atributos/colonizacion-humana/" class="flex:1 flex flex:col t:right ai:center text-decoration:none f:sky-68">
+      <a href="/gl/atributos/formas-ancestrais/" class="flex:1 flex flex:col t:right ai:center text-decoration:none f:sky-68">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256" class="mb:10 ml:auto"><path fill="currentColor" d="M165.66 202.34a8 8 0 0 1-11.32 11.32l-80-80a8 8 0 0 1 0-11.32l80-80a8 8 0 0 1 11.32 11.32L91.31 128Z"/></svg>
-        <span class="w:220 ml:auto">Obra épica de colonización humana</span>
+        <span class="w:220 ml:auto">Formas ancestrais de ocupar o territorio</span>
       </a>
       
 
       
-      <a href="/gl/atributos/patrimonio-hidraulico/" class="flex:1 flex flex:col t:left ai:center text-decoration:none f:sky-68">
+      <a href="/gl/atributos/colonizacion-humana/" class="flex:1 flex flex:col t:left ai:center text-decoration:none f:sky-68">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256" class="mb:10 mr:auto"><path fill="currentColor" d="m181.66 133.66l-80 80a8 8 0 0 1-11.32-11.32L164.69 128L90.34 53.66a8 8 0 0 1 11.32-11.32l80 80a8 8 0 0 1 0 11.32Z"/></svg>
-        <span class="w:220 mr:auto">Denso e variado patrimonio hidráulico</span>
+        <span class="w:220 mr:auto">Obra épica de colonización humana</span>
       </a>
       
     </nav>
@@ -392,11 +392,17 @@
       centeredSlides: true,
       spaceBetween: 25,
       watchOverflow: false,
+      
+      observer: true,
+      observeParents: true,
+      resizeObserver: true,
       navigation: {
         nextEl: ".boton-siguiente",
         prevEl: ".boton-anterior",
       },
     });
+    
+    swiper.slideTo(0, 0);
   }
 </script>
 

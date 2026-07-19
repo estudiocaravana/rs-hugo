@@ -42,21 +42,31 @@
 
 <script src="/js/swiper-bundle.min.js"></script>
 <script>
-  // Esta inicialización servirá para CUALQUIER página que llame al partial
-  if (document.querySelector('.mySwiper')) {
-    var swiper = new Swiper(".mySwiper", {
-      initialSlide: 0,
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 25,
-      watchOverflow: false,
-      navigation: {
-        nextEl: ".boton-siguiente",
-        prevEl: ".boton-anterior",
-      },
-    });
-  }
+  window.addEventListener('load', function() {
+    const swiperContainer = document.querySelector('.mySwiper');
+    
+    if (swiperContainer) {
+      var swiper = new Swiper(".mySwiper", {
+        initialSlide: 0,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 25,
+        watchOverflow: false,
+        observer: true,
+        observeParents: true,
+        navigation: {
+          nextEl: ".boton-siguiente",
+          prevEl: ".boton-anterior",
+        },
+      });
+
+      // Añade la clase para mostrar el carrusel de forma suave
+      swiperContainer.classList.add('is-ready');
+    }
+  });
 </script>
+
+
 
 
 </body>

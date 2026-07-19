@@ -528,11 +528,17 @@
       centeredSlides: true,
       spaceBetween: 25,
       watchOverflow: false,
+      
+      observer: true,
+      observeParents: true,
+      resizeObserver: true,
       navigation: {
         nextEl: ".boton-siguiente",
         prevEl: ".boton-anterior",
       },
     });
+    
+    swiper.slideTo(0, 0);
   }
 </script>
 

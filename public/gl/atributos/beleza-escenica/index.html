@@ -310,6 +310,16 @@
     opacity: 0 !important;
     pointer-events: none !important;
   }
+  .mySwiper {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+ 
+.mySwiper.is-ready {
+  opacity: 1;
+}
+
 </style>
 
 
@@ -335,9 +345,9 @@
     
     <nav class="flex justify-content:space-between max-w:600 mx:auto mt:40 mb:5vw px:20 gap:30">
       
-      <a href="/gl/atributos/formas-ancestrais/" class="flex:1 flex flex:col t:right ai:center text-decoration:none f:sky-68">
+      <a href="/gl/atributos/patrimonio-hidraulico/" class="flex:1 flex flex:col t:right ai:center text-decoration:none f:sky-68">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256" class="mb:10 ml:auto"><path fill="currentColor" d="M165.66 202.34a8 8 0 0 1-11.32 11.32l-80-80a8 8 0 0 1 0-11.32l80-80a8 8 0 0 1 11.32 11.32L91.31 128Z"/></svg>
-        <span class="w:220 ml:auto">Formas ancestrais de ocupar o territorio</span>
+        <span class="w:220 ml:auto">Denso e variado patrimonio hidráulico</span>
       </a>
       
 
@@ -383,21 +393,31 @@
 
 <script src="/js/swiper-bundle.min.js"></script>
 <script>
-  
-  if (document.querySelector('.mySwiper')) {
-    var swiper = new Swiper(".mySwiper", {
-      initialSlide: 0,
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 25,
-      watchOverflow: false,
-      navigation: {
-        nextEl: ".boton-siguiente",
-        prevEl: ".boton-anterior",
-      },
-    });
-  }
+  window.addEventListener('load', function() {
+    const swiperContainer = document.querySelector('.mySwiper');
+    
+    if (swiperContainer) {
+      var swiper = new Swiper(".mySwiper", {
+        initialSlide: 0,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 25,
+        watchOverflow: false,
+        observer: true,
+        observeParents: true,
+        navigation: {
+          nextEl: ".boton-siguiente",
+          prevEl: ".boton-anterior",
+        },
+      });
+
+      
+      swiperContainer.classList.add('is-ready');
+    }
+  });
 </script>
+
+
 
 
 </body>

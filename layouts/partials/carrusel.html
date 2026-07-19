@@ -58,4 +58,14 @@
     opacity: 0 !important;
     pointer-events: none !important;
   }
+  .mySwiper {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Esta clase la añadiremos por JavaScript */
+.mySwiper.is-ready {
+  opacity: 1;
+}
+
 </style>

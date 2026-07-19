@@ -36,21 +36,21 @@
                 href="//localhost:1313/en/atributos/beleza-escenica/"
                 />
   </url><url>
-    <loc>//localhost:1313/es/atributos/formas-ancestrais/</loc>
+    <loc>//localhost:1313/es/atributos/patrimonio-hidraulico/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="gl"
-                href="//localhost:1313/gl/atributos/formas-ancestrais/"
+                href="//localhost:1313/gl/atributos/patrimonio-hidraulico/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="//localhost:1313/es/atributos/formas-ancestrais/"
+                href="//localhost:1313/es/atributos/patrimonio-hidraulico/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/atributos/formas-ancestrais/"
+                href="//localhost:1313/en/atributos/patrimonio-hidraulico/"
                 />
   </url><url>
     <loc>//localhost:1313/es/docs/somos-patrimonio/</loc>
@@ -70,23 +70,6 @@
                 href="//localhost:1313/en/docs/somos-patrimonio/"
                 />
   </url><url>
-    <loc>//localhost:1313/es/atributos/patrimonio-hidraulico/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="gl"
-                href="//localhost:1313/gl/atributos/patrimonio-hidraulico/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="//localhost:1313/es/atributos/patrimonio-hidraulico/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/atributos/patrimonio-hidraulico/"
-                />
-  </url><url>
     <loc>//localhost:1313/es/docs/formulario-inscricion/</loc>
     <xhtml:link
                 rel="alternate"
@@ -102,23 +85,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/en/docs/formulario-inscricion/"
-                />
-  </url><url>
-    <loc>//localhost:1313/es/docs/ben-interese-cultural/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="gl"
-                href="//localhost:1313/gl/docs/ben-interese-cultural/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="//localhost:1313/es/docs/ben-interese-cultural/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/docs/ben-interese-cultural/"
                 />
   </url><url>
     <loc>//localhost:1313/es/atributos/colonizacion-humana/</loc>
@@ -138,6 +104,23 @@
                 href="//localhost:1313/en/atributos/colonizacion-humana/"
                 />
   </url><url>
+    <loc>//localhost:1313/es/docs/ben-interese-cultural/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="gl"
+                href="//localhost:1313/gl/docs/ben-interese-cultural/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="//localhost:1313/es/docs/ben-interese-cultural/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/docs/ben-interese-cultural/"
+                />
+  </url><url>
     <loc>//localhost:1313/es/atributos/pegada-monastica/</loc>
     <xhtml:link
                 rel="alternate"
@@ -153,6 +136,23 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/en/atributos/pegada-monastica/"
+                />
+  </url><url>
+    <loc>//localhost:1313/es/atributos/formas-ancestrais/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="gl"
+                href="//localhost:1313/gl/atributos/formas-ancestrais/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="//localhost:1313/es/atributos/formas-ancestrais/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/atributos/formas-ancestrais/"
                 />
   </url><url>
     <loc>//localhost:1313/es/docs/waterscapes/</loc>

@@ -144,9 +144,9 @@
     <main class="container">
         
 
-<div class="w:100% aspect:1920/800">
+<div class="w:100% aspect:1920/1080">
     <iframe class="w:100% h:100%"
-        src="https://player.vimeo.com/video/1122918826?dnt=1&amp;amp;app_id=122963"
+        src="https://player.vimeo.com/video/1093021915?dnt=1&amp;amp;app_id=122963"
         frameborder="0" 
         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" 
@@ -195,11 +195,17 @@
       centeredSlides: true,
       spaceBetween: 25,
       watchOverflow: false,
+      
+      observer: true,
+      observeParents: true,
+      resizeObserver: true,
       navigation: {
         nextEl: ".boton-siguiente",
         prevEl: ".boton-anterior",
       },
     });
+    
+    swiper.slideTo(0, 0);
   }
 </script>
 

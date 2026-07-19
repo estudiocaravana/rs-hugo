@@ -466,21 +466,31 @@ class="p:60|20 p:80|40@md bg:yellow-96 bg:url('/img/fondo.webp') bg:no-repeat bg
 
 <script src="/js/swiper-bundle.min.js"></script>
 <script>
-  
-  if (document.querySelector('.mySwiper')) {
-    var swiper = new Swiper(".mySwiper", {
-      initialSlide: 0,
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 25,
-      watchOverflow: false,
-      navigation: {
-        nextEl: ".boton-siguiente",
-        prevEl: ".boton-anterior",
-      },
-    });
-  }
+  window.addEventListener('load', function() {
+    const swiperContainer = document.querySelector('.mySwiper');
+    
+    if (swiperContainer) {
+      var swiper = new Swiper(".mySwiper", {
+        initialSlide: 0,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 25,
+        watchOverflow: false,
+        observer: true,
+        observeParents: true,
+        navigation: {
+          nextEl: ".boton-siguiente",
+          prevEl: ".boton-anterior",
+        },
+      });
+
+      
+      swiperContainer.classList.add('is-ready');
+    }
+  });
 </script>
+
+
 
 
 </body>
