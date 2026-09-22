@@ -4,8 +4,8 @@ description: "Candidatura de la Ribeira Sacra Paisaje del Agua a la Lista del Pa
 video: "https://player.vimeo.com/video/1121912121?dnt=1&amp;app_id=122963"
 hero:
   tagline: "Candidatura a la Lista del Patrimonio Mundial"
-  title: "Ribeira Sacra Paisaxe da Auga"
-  subtitle: "Ribeira Sacra é a historia viva da relación entre a auga e o ser humano que, grazas ao seu enxeño, esculpiu unha paisaxe de auga ao longo de máis de 1.500 anos de ocupación continuada."
+  title: "Ribeira Sacra Paisaje del Auga"
+  subtitle: "Ribeira Sacra es la historia viva de la relación entre el agua y el ser humano que, gracias a su ingenio, esculpió un paisaje de agua a lo largo de más de 1.500 años de ocupación continuada."
   cta_text: "Ver Documental"
   cta_link: "#atributos"
 ruth:
