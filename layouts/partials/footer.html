@@ -3,8 +3,14 @@
     
     <!-- Lado Izquierdo: Logos institucional e imagen -->
     <div class="flex gap:20 align-items:center">
-      <img src="/img/gob.webp" alt="Gobierno" class="h:40 h:50@md w:auto">
-      <img src="/img/xuntaver.webp" alt="Xunta de Galicia" class="h:40 h:50@md w:auto">
+      <img src="/img/gob.webp" 
+           alt="Logotipo del Gobierno de España" 
+           width="349" height="100" 
+           class="h:40 h:50@md w:auto">      
+      <img src="/img/xuntaver.webp" 
+          alt="Logotipo de la Xunta de Galicia" 
+          width="373" height="100" 
+          class="h:40 h:50@md w:auto">    
     </div>
 
     <!-- Lado Derecho: Enlaces -->
@@ -12,7 +18,7 @@
       <a href="{{ "legal" | relLangURL }}" class="text-decoration:none f:sky-20 f:14 f:medium hover:text-decoration:underline">
         {{ i18n "textos_legais" }}
       </a>
-      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="cursor:pointer bg:sky-66 color:white b:none w:40 square r:100 f:12 f:bold flex ai:center jc:center tracking:1 hover:bg:sky-80 transition:background-color|0.3s flex align-items:center gap:5 block mx:auto mt:30 mt:0@md">
+      <button aria-label="Volver ao inicio da páxina" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="cursor:pointer bg:sky-66 color:white b:none w:40 square r:100 f:12 f:bold flex ai:center jc:center tracking:1 hover:bg:sky-80 transition:background-color|0.3s flex align-items:center gap:5 block mx:auto mt:30 mt:0@md">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="18 15 12 9 6 15"></polyline>
         </svg>

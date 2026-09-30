@@ -33,8 +33,11 @@
 
 <section class="bg:yellow-96 p:5vw|3vw" data-editable="layouts/index.html:ribeiraos">
   <div class="flex@md gap:30 ai:center max-w:1200 mx:auto">
-    <div class="">
-      <img src="/img/ribeiraos.webp" alt="Ribeiraos" class="w:100% h:auto r:8px">
+    <div>
+        <img src="/img/ribeiraos.webp" 
+            alt="Paisaje de los viñedos y ríos de Ribeiraos" 
+            width="810" height="448" 
+            class="w:100% h:auto r:8px">
     </div>
     <div class="max-w:360 f:16">
       {{ .Params.ribeiraos | markdownify }}
@@ -61,16 +64,28 @@
         <div class="grid grid-cols:2 grid-cols:4@md bg:sky-88 p:20 gap:10 gap:20@lg r:4">
             <!-- Tip: Puedes usar un rango si las fotos están en una carpeta, o ponerlas a mano -->
             <div class="bg:sky-88 r:4 shadow:md aspect:4/3 flex jc:center ai:center">
-                <img src="/img/loca/world.webp" alt="Mapa mundo" class="w:100% h:100% box-shadow:3|3|6|sky-84">
+                  <img src="/img/loca/world.webp" 
+                    alt="Mapa del mundo que muestra la ubicación" 
+                    width="707" height="548" 
+                    class="w:100% h:auto obj:cover box-shadow:3|3|6|sky-84">
             </div>
             <div class="bg:sky-88 r:4 shadow:md aspect:4/3 flex jc:center ai:center">
-                <img src="/img/loca/europe.webp" alt="Mapa Europa" class="w:100% h:100% box-shadow:3|3|6|sky-84">
+                <img src="/img/loca/europe.webp" 
+                    alt="Mapa de Europa con la ubicación marcada" 
+                    width="706" height="549" 
+                    class="w:100% h:auto obj:cover box-shadow:3|3|6|sky-84">            
             </div>
             <div class="bg:sky-88 r:4 shadow:md aspect:4/3 flex jc:center ai:center">
-                <img src="/img/loca/spain.webp" alt="Mapa España" class="w:100% h:100% box-shadow:3|3|6|sky-84">
+                  <img src="/img/loca/spain.webp" 
+                    alt="Mapa de España detallando la situación" 
+                    width="705" height="549" 
+                    class="w:100% h:auto obj:cover box-shadow:3|3|6|sky-84">
             </div>
             <div class="bg:sky-88 r:4 shadow:md aspect:4/3 flex jc:center ai:center">
-                <img src="/img/loca/galician.webp" alt="Mapa Galicia" class="w:100% h:100% box-shadow:3|3|6|sky-84">
+                <img src="/img/loca/galician.webp" 
+                alt="Mapa de Galicia enfocado en la Ribeira Sacra" 
+                width="705" height="552" 
+                class="w:100% h:auto obj:cover box-shadow:3|3|6|sky-84">
             </div>
         </div>
     </div>
@@ -106,7 +121,7 @@
             <!-- Caja 2: Zona de Amortecemento -->
             <div>
                 <h3 class="f:18 f:bold m:0">{{ .Params.datos_ben.amortecemento.title }}</h3>
-                <div class="f:bold color:green-60 my:5">{{ .Params.datos_ben.amortecemento.cifra }}</div>
+                <div class="f:bold color:green-50 my:5">{{ .Params.datos_ben.amortecemento.cifra }}</div>
                 <p class="m:0 lh:1.5">{{ .Params.datos_ben.amortecemento.texto }}</p>
             </div>
 

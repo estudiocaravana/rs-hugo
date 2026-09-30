@@ -12,12 +12,18 @@
     <meta name="description" content="{{ .Site.Params.description }}">
     {{ end }}
 
-    <!-- Cargamos las fuentes locales de forma limpia y directa -->
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <!-- [OPCIONAL pero recomendado] Precomentar a Copilot: Si en tu fonts.css cargas, por ejemplo, Inter-Regular.woff2, pon la línea aquí abajo para que la fuente cargue antes que nada y evites el parpadeo del texto (CLS) -->
+    <!-- <link rel="preload" href="/fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin> -->
 
-    <!-- EN LOCAL: Cargamos el script de Master CSS en memoria (cero configuraciones) -->
-    <script src="https://cdn.master.co/css@1.37.8"></script>
+    <!-- Cargamos los estilos -->
+    <link rel="stylesheet" href="/css/fonts.css">
+    <!-- Carga no bloqueante del CSS de Swiper -->
+<link rel="stylesheet" href="/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/css/swiper-bundle.min.css"></noscript>
+
+
+    <!-- SOLUCIÓN PERFORMANCE: Añadimos "defer" para que Master CSS se ejecute en paralelo sin bloquear el pintado inicial de la pantalla -->
+    <script defer src="https://cdn.master.co/css@1.37.8"></script>
 
     <!-- icon -->
     <link rel="icon" href="/img/simbolo_paisaxe.webp" type="image/x-icon">
